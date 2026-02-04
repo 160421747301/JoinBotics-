@@ -45,7 +45,7 @@ export default function Contact() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("https://joinbotics-backend.onrender.com/api/contact", {
+      const response = await fetch("https://joinboticswebsite.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

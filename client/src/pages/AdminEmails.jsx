@@ -22,8 +22,8 @@ export default function AdminEmails() {
       setLoading(true);
       setError("");
       const [emailsRes, responsesRes] = await Promise.all([
-        fetch("https://joinbotics-backend.onrender.com/api/admin/emails"),
-        fetch("https://joinbotics-backend.onrender.com/api/admin/responses")
+        fetch("https://joinboticswebsite.onrender.com/api/admin/emails"),
+        fetch("https://joinboticswebsite.onrender.com/api/admin/responses")
       ]);
 
       if (!emailsRes.ok) {
@@ -57,7 +57,7 @@ export default function AdminEmails() {
       setError("");
       setMessage("");
       
-      const response = await fetch("https://joinbotics-backend.onrender.com/api/admin/emails", {
+      const response = await fetch("https://joinboticswebsite.onrender.com/api/admin/emails", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -92,7 +92,7 @@ export default function AdminEmails() {
       setMessage("");
       
       const response = await fetch(
-        `https://joinbotics-backend.onrender.com/api/admin/emails/${type}/${index}`,
+        `https://joinboticswebsite.onrender.com/api/admin/emails/${type}/${index}`,
         { method: "DELETE" }
       );
 
@@ -119,7 +119,7 @@ export default function AdminEmails() {
       setMessage("");
       
       const response = await fetch(
-        `https://joinbotics-backend.onrender.com/api/admin/responses/${type}/${responseId}`,
+        `https://joinboticswebsite.onrender.com/api/admin/responses/${type}/${responseId}`,
         { method: "DELETE" }
       );
 

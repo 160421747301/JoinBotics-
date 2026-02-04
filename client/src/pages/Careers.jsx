@@ -16,7 +16,7 @@ export default function Careers() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("https://joinbotics-backend.onrender.com/api/careers", {
+      const response = await fetch("https://joinboticswebsite.onrender.com/api/careers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

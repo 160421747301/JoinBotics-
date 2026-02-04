@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -25,43 +25,30 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Email Transporter Setup
-let transporter;
-
-if (process.env.EMAIL_SERVICE === "SendGrid") {
-  transporter = nodemailer.createTransport({
-    host: "smtp.sendgrid.net",
-    port: 587,
-    auth: {
-      user: "apikey",
-      pass: process.env.SENDGRID_API_KEY
-    }
-  });
-} else {
-  transporter = nodemailer.createTransport({
-    service: process.env.EMAIL_SERVICE || "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD
-    }
-  });
-}
+// Email Setup - Use SendGrid Web API
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // Test email configuration on startup
-transporter.verify((error, success) => {
-  if (error) {
-    console.error("❌ Email configuration error:", error);
-  } else {
-    console.log("✅ Email service configured successfully");
-  }
-});
+if (process.env.SENDGRID_API_KEY) {
+  console.log("✅ Email service configured successfully (SendGrid Web API)");
+} else {
+  console.error("❌ Email configuration error: Missing SENDGRID_API_KEY");
+}
 
 // Helper function to send emails
 async function sendEmail(mailOptions) {
   try {
-    const info = await transporter.sendMail(mailOptions);
-    console.log("✅ Email sent:", info.response);
-    return { success: true, messageId: info.messageId };
+    const msg = {
+      to: mailOptions.to,
+      from: process.env.EMAIL_FROM || "noreply@joinbotics.com",
+      subject: mailOptions.subject,
+      html: mailOptions.html,
+      text: mailOptions.text
+    };
+    
+    const info = await sgMail.send(msg);
+    console.log("✅ Email sent successfully");
+    return { success: true, messageId: info[0].headers['x-message-id'] };
   } catch (error) {
     console.error("❌ Error sending email:", error);
     throw error;
