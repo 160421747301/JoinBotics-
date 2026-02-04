@@ -26,13 +26,26 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Email Transporter Setup
-const transporter = nodemailer.createTransport({
-  service: process.env.EMAIL_SERVICE || "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD
-  }
-});
+let transporter;
+
+if (process.env.EMAIL_SERVICE === "SendGrid") {
+  transporter = nodemailer.createTransport({
+    host: "smtp.sendgrid.net",
+    port: 587,
+    auth: {
+      user: "apikey",
+      pass: process.env.SENDGRID_API_KEY
+    }
+  });
+} else {
+  transporter = nodemailer.createTransport({
+    service: process.env.EMAIL_SERVICE || "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD
+    }
+  });
+}
 
 // Test email configuration on startup
 transporter.verify((error, success) => {
