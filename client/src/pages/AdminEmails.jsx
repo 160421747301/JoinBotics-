@@ -38,7 +38,7 @@ export default function AdminEmails() {
       setEmails(emailsData);
       setResponses(responsesData);
     } catch (err) {
-      setError(`Error: ${err.message}. Is the server running on http://localhost:5000?`);
+      setError(`Error: ${err.message}. Backend connection failed.`);
       console.error(err);
     } finally {
       setLoading(false);
