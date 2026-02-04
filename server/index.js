@@ -46,11 +46,15 @@ async function sendEmail(mailOptions) {
       text: mailOptions.text
     };
     
+    console.log("📨 Sending email from:", msg.from, "to:", msg.to);
     const info = await sgMail.send(msg);
     console.log("✅ Email sent successfully");
     return { success: true, messageId: info[0].headers['x-message-id'] };
   } catch (error) {
     console.error("❌ Error sending email:", error);
+    if (error.response && error.response.body) {
+      console.error("📋 SendGrid error details:", error.response.body);
+    }
     throw error;
   }
 }
