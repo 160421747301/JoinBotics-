@@ -16,9 +16,25 @@ const responsesFilePath = path.join(__dirname, "responses.json");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Allowed origins
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://joinbotics.com",
+  "https://www.joinbotics.com"
+];
+
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: ["GET", "POST", "DELETE"],
   credentials: true
 }));
