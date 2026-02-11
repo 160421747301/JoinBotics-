@@ -149,14 +149,14 @@ export default function AdminEmails() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#220b34] to-[#1a0a2e] py-20 px-4 sm:px-6 pt-40">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-[#220b34] to-[#1a0a2e] py-8 px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 overflow-x-hidden">
+      <div className="max-w-4xl mx-auto overflow-x-hidden">
         {/* Header */}
-        <div className="mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+        <div className="mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Email Management
           </h1>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-base sm:text-lg">
             Configure which emails receive form submissions
           </p>
         </div>
@@ -174,15 +174,15 @@ export default function AdminEmails() {
         )}
 
         {/* Add Email Form */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-8 mb-10">
-          <h2 className="text-2xl font-bold text-white mb-6">Add New Email</h2>
+        <div className="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-6 lg:p-8 mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Add New Email</h2>
           
           <form onSubmit={handleAddEmail} className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               <select
                 value={selectedType}
                 onChange={(e) => setSelectedType(e.target.value)}
-                className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-[#c11e38]"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-[#c11e38]"
               >
                 <option value="contact" className="bg-[#220b34]">Contact Form</option>
                 <option value="careers" className="bg-[#220b34]">Careers Form</option>
@@ -193,12 +193,12 @@ export default function AdminEmails() {
                 value={newEmail}
                 onChange={(e) => setNewEmail(e.target.value)}
                 placeholder="Enter email address"
-                className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#c11e38]"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#c11e38]"
               />
 
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#c11e38] hover:bg-[#a01a2e] text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition"
+                className="w-full px-6 py-3 bg-[#c11e38] hover:bg-[#a01a2e] text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition"
               >
                 <FaPlus /> Add Email
               </button>
@@ -207,8 +207,8 @@ export default function AdminEmails() {
         </div>
 
         {/* Contact Form Emails */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-6">
+        <div className="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 overflow-hidden">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
             Contact Form Recipients
           </h2>
           
@@ -217,14 +217,14 @@ export default function AdminEmails() {
               {emails.contact.map((email, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-lg"
+                  className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-4 bg-white/5 border border-white/10 rounded-lg overflow-hidden"
                 >
-                  <span className="text-white">{email}</span>
+                  <span className="text-white break-all overflow-wrap-anywhere min-w-0">{email}</span>
                   <button
                     onClick={() => handleDeleteEmail("contact", index)}
-                    className="text-red-400 hover:text-red-300 transition flex items-center gap-2"
+                    className="text-red-400 hover:text-red-300 transition flex items-center justify-center gap-2 px-4 py-2 bg-red-500/10 rounded-lg sm:bg-transparent sm:px-0 sm:py-0"
                   >
-                    <FaTrash /> Remove
+                    <FaTrash /> <span>Remove</span>
                   </button>
                 </div>
               ))}
@@ -235,8 +235,8 @@ export default function AdminEmails() {
         </div>
 
         {/* Careers Form Emails */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-6">
+        <div className="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 overflow-hidden">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
             Careers Form Recipients
           </h2>
           
@@ -245,14 +245,14 @@ export default function AdminEmails() {
               {emails.careers.map((email, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-lg"
+                  className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-4 bg-white/5 border border-white/10 rounded-lg overflow-hidden"
                 >
-                  <span className="text-white">{email}</span>
+                  <span className="text-white break-all overflow-wrap-anywhere min-w-0">{email}</span>
                   <button
                     onClick={() => handleDeleteEmail("careers", index)}
-                    className="text-red-400 hover:text-red-300 transition flex items-center gap-2"
+                    className="text-red-400 hover:text-red-300 transition flex items-center justify-center gap-2 px-4 py-2 bg-red-500/10 rounded-lg sm:bg-transparent sm:px-0 sm:py-0"
                   >
-                    <FaTrash /> Remove
+                    <FaTrash /> <span>Remove</span>
                   </button>
                 </div>
               ))}
@@ -263,7 +263,7 @@ export default function AdminEmails() {
         </div>
 
         {/* Info Box */}
-        <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+        <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-4 sm:p-6">
           <h3 className="text-lg font-semibold text-blue-300 mb-3">ℹ️ How it works</h3>
           <ul className="text-blue-200/80 space-y-2">
             <li>• Add multiple email addresses for each form type</li>
@@ -274,13 +274,13 @@ export default function AdminEmails() {
         </div>
 
         {/* Responses Section */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-white mb-4">Form Responses</h2>
-          <p className="text-gray-400 mb-8">All submitted form data is saved here for quick access</p>
+        <div className="mt-10 sm:mt-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Form Responses</h2>
+          <p className="text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">All submitted form data is saved here for quick access</p>
 
           {/* Contact Form Responses */}
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-white mb-6">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
               Contact Form Submissions ({responses.contact?.length || 0})
             </h3>
             
@@ -342,8 +342,8 @@ export default function AdminEmails() {
           </div>
 
           {/* Careers Form Responses */}
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-4 sm:p-6 lg:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
               Careers Form Submissions ({responses.careers?.length || 0})
             </h3>
             
@@ -376,7 +376,7 @@ export default function AdminEmails() {
 
                     {expandedResponse === response.id && (
                       <div className="p-4 border-t border-white/10 bg-white/[0.02] space-y-3">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
                             <p className="text-gray-400 text-sm">Email</p>
                             <p className="text-white break-all">{response.email}</p>
@@ -387,11 +387,11 @@ export default function AdminEmails() {
                           </div>
                           <div>
                             <p className="text-gray-400 text-sm">Position</p>
-                            <p className="text-white">{response.position}</p>
+                            <p className="text-white break-words">{response.position}</p>
                           </div>
                           <div>
                             <p className="text-gray-400 text-sm">Location</p>
-                            <p className="text-white">{response.location}</p>
+                            <p className="text-white break-words">{response.location}</p>
                           </div>
                         </div>
                         <div>
