@@ -102,7 +102,7 @@ app.post("/api/contact", async (req, res) => {
     // Email to JoinBotics (all configured emails)
     const adminMailOptions = {
       from: process.env.EMAIL_FROM,
-      to: recipientEmails.join(","),
+      to: recipientEmails,
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -190,7 +190,7 @@ app.post("/api/careers", async (req, res) => {
     // Email to JoinBotics (all configured emails)
     const adminMailOptions = {
       from: process.env.EMAIL_FROM,
-      to: recipientEmails.join(","),
+      to: recipientEmails,
       subject: `New Job Application: ${position}`,
       html: `
         <h2>New Job Application</h2>
