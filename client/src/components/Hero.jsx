@@ -24,14 +24,16 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="inline-block text-white"
               >
-                <span>Empowering </span>
-                <span>the </span>
-                <span>Future </span>
+                <span>Shaping </span>
+                <span>Tomorrow's </span>
+                <span>Workforce </span>
                 <span>with </span>
-                <span className="shimmer-text" style={{ animationDelay: '0s' }}>Robotics, </span>
-                <span className="shimmer-text" style={{ animationDelay: '1.2s' }}>Automation </span>
-                <span className="shimmer-text" style={{ animationDelay: '2.4s' }}>& </span>
-                <span className="shimmer-text" style={{ animationDelay: '3.6s' }}>STEAM</span>
+                <span className="shimmer-text" style={{ animationDelay: '0s' }}>Advanced </span>
+                <span className="shimmer-text" style={{ animationDelay: '1.2s' }}>STEM, </span>
+                <span className="shimmer-text" style={{ animationDelay: '2.4s' }}>Robotics </span>
+                <span className="shimmer-text" style={{ animationDelay: '3.6s' }}>& </span>
+                <span className="shimmer-text" style={{ animationDelay: '4.8s' }}>AI </span>
+                <span className="shimmer-text" style={{ animationDelay: '6s' }}>Programs</span>
               </motion.span>
             </h1>
             <div className="mt-6 flex gap-4">
@@ -44,7 +46,8 @@ export default function Hero() {
                 </span>
               </a>
               <a
-                href="/programs"
+                href="/assets/JoinBotics_Brochure.pdf"
+                download="JoinBotics_Brochure.pdf"
                 className="inline-block rounded-xl px-6 py-3 bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white font-semibold shadow-lg hover:shadow-2xl hover:shadow-[#c11e38]/50 transition-all duration-300 hover:scale-105 hover:from-[#d42847] hover:to-[#2d0e42] relative overflow-hidden group"
               >
                 <span className="relative z-10">Download Brochure</span>

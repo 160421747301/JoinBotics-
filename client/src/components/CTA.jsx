@@ -12,8 +12,8 @@ export default function CTA() {
       >
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">Ready to Transform Education?</h2>
-            <p className="text-xl text-white/90">Join 50+ schools and 100,000+ students in the STEAM revolution</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">Ready to Bring Future‑Ready Learning to Your Campus?</h2>
+            <p className="text-xl text-white/90">Empower your students with industry‑aligned STEM, Robotics & AI programs.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">

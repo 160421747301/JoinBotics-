@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo to White Favicon Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #333;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        .preview {
+            display: inline-block;
+            margin: 20px;
+        }
+        .preview canvas {
+            background: #333;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convert Logo to White Favicon</h1>
+    <p>This tool will convert your colorful logo to a white version suitable for favicons</p>
+    
+    <div>
+        <h3>Original Logo:</h3>
+        <canvas id="originalCanvas"></canvas>
+    </div>
+    
+    <div>
+        <h3>White Version (for dark backgrounds):</h3>
+        <div class="preview">
+            <canvas id="whiteCanvas"></canvas>
+        </div>
+    </div>
+    
+    <button onclick="downloadWhite()">Download White Logo as favicon.png</button>
+    <button onclick="downloadICO()">Download as favicon.ico (32x32)</button>
+    
+    <script>
+        const originalCanvas = document.getElementById('originalCanvas');
+        const whiteCanvas = document.getElementById('whiteCanvas');
+        const originalCtx = originalCanvas.getContext('2d');
+        const whiteCtx = whiteCanvas.getContext('2d');
+        
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.onload = function() {
+            // Set canvas sizes
+            originalCanvas.width = img.width;
+            originalCanvas.height = img.height;
+            whiteCanvas.width = img.width;
+            whiteCanvas.height = img.height;
+            
+            // Draw original
+            originalCtx.drawImage(img, 0, 0);
+            
+            // Get image data
+            const imageData = originalCtx.getImageData(0, 0, img.width, img.height);
+            const data = imageData.data;
+            
+            // Convert to white (preserve alpha channel for transparency)
+            for (let i = 0; i < data.length; i += 4) {
+                const alpha = data[i + 3];
+                if (alpha > 0) {
+                    // Make all non-transparent pixels white
+                    data[i] = 255;     // R
+                    data[i + 1] = 255; // G
+                    data[i + 2] = 255; // B
+                    // Keep original alpha
+                }
+            }
+            
+            // Draw white version
+            whiteCtx.putImageData(imageData, 0, 0);
+        };
+        
+        img.src = '/assets/logo-color.png';
+        
+        function downloadWhite() {
+            const link = document.createElement('a');
+            link.download = 'favicon.png';
+            link.href = whiteCanvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        function downloadICO() {
+            // Create a 32x32 version
+            const icoCanvas = document.createElement('canvas');
+            icoCanvas.width = 32;
+            icoCanvas.height = 32;
+            const icoCtx = icoCanvas.getContext('2d');
+            icoCtx.drawImage(whiteCanvas, 0, 0, 32, 32);
+            
+            const link = document.createElement('a');
+            link.download = 'favicon-32x32.png';
+            link.href = icoCanvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>

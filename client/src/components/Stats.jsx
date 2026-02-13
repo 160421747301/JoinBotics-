@@ -52,64 +52,28 @@ export default function Stats() {
       id: 1, 
       value: "50+", 
       label: "Schools Empowered", 
-      desc: "Partnered schools across Maharashtra, Karnataka, and Gujarat",
-      details: [
-        "ATL-equipped schools guided for setup, training, and curriculum alignment",
-        "Schools range from CBSE, ICSE, State Boards, and international curriculums",
-        "Regular Tech Week & Robo Fair organized in collaboration with partner schools"
-      ]
+      desc: "Partnering with institutions across India to build hands on STEM, Robotics & AI ecosystems."
     },
     { 
       id: 2, 
-      value: "100,000+", 
-      label: "Students Trained", 
-      desc: "In Robotics, Coding, AI, and Drones from Grade 1 to Engineering",
-      details: [
-        "Programs available for Grade 1 to Engineering Level",
-        "Hands-on Practical Sessions in each course",
-        "Live project submission for every enrolled batch (Optional)"
-      ]
+      value: "100k+", 
+      label: "Students Skilled", 
+      desc: "Learners from Grade 1 to Engineering trained in Robotics, Coding, AI, IoT & Drones through real, project based experiences."
     },
     { 
       id: 3, 
-      value: "1,200+", 
-      label: "Innovative Projects", 
-      desc: "Student projects in IoT, AI, Robotics & Automation",
-      details: [
-        "Smart Traffic Systems using IoT",
-        "Face Recognition & Security Robots",
-        "Automatic Plant Irrigation using Sensors",
-        "Voice-Controlled Home Automation",
-        "Python-based Chatbots & AI Assistants",
-        "Project Expo Participation"
-      ]
+      value: "500+", 
+      label: "Innovative Student Projects", 
+      desc: "From IoT systems to AI automations, students design and build impactful models that strengthen problem solving and creativity."
     },
     { 
       id: 4, 
-      value: "Many", 
-      label: "ATL Success & Collaboration", 
-      desc: "ATL Setup & Mentorship with custom activity planners",
-      details: [
-        "ATL Teachers' Training Programs conducted",
-        "Custom ATL Activity Planner run/designed by JoinBotics",
-        "Cross-disciplinary Integration: Merged ATL projects with school curriculum in Science, Math & Social Studies"
-      ]
-    },
-    { 
-      id: 5, 
       value: "4+", 
-      label: "Awards & Recognition", 
-      desc: "National and International recognition for excellence in STEAM education",
-      details: [
-        "9th Global Education & Skills Summit 2024 (Delhi, India)",
-        "Global Innovation Exhibition (Shanghai, China)",
-        "Best STEM Education Partner (Maharashtra & Karnataka)",
-        "National-Level ATL Recognition"
-      ]
+      label: "Awards & Recognitions", 
+      desc: "National and international acknowledgements celebrating our contribution to STEM innovation and future skills education."
     },
   ];
 
-  const [expandedId, setExpandedId] = useState(null);
   const sectionRef = useRef(null);
   const [started, setStarted] = useState(false);
 
@@ -136,11 +100,10 @@ export default function Stats() {
   return (
     <section ref={sectionRef} className="mx-auto max-w-6xl px-6 py-12">
       <div className="text-center mb-8">
-        <p className="text-sm font-medium rounded-full px-3 py-1 bg-white/60 backdrop-blur-md inline-block text-gray-700 border-2 border-white/40 shadow-sm">OUR IMPACT</p>
-        <h2 className="mt-4 text-3xl font-bold">Transforming Education with Real Numbers</h2>
-        <p className="mt-2 text-gray-600">Our work speaks for itself. Here's how JoinBotics is transforming education.</p>
+        <h2 className="text-3xl font-bold">Driving Meaningful Change Through Future Ready Learning</h2>
+        <p className="mt-2 text-gray-600">Our work speaks through the outcomes we create. Here's how Join Botics is reshaping STEM, Robotics & AI education across India.</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {items.map((it) => (
           <div 
             key={it.id} 
@@ -151,36 +114,6 @@ export default function Stats() {
             </div>
             <div className="mt-2 text-lg font-semibold text-gray-900">{it.label}</div>
             <div className="mt-1 text-xs text-gray-600">{it.desc}</div>
-            
-            {it.details && it.details.length > 0 && (
-              <>
-                <button
-                  onClick={() => setExpandedId(expandedId === it.id ? null : it.id)}
-                  className="mt-3 text-xs text-blue-600 hover:text-blue-700 font-medium flex items-center justify-center gap-1 mx-auto"
-                >
-                  {expandedId === it.id ? (
-                    <>
-                      Less Details <FaChevronUp className="text-[10px]" />
-                    </>
-                  ) : (
-                    <>
-                      More Details <FaChevronDown className="text-[10px]" />
-                    </>
-                  )}
-                </button>
-                
-                {expandedId === it.id && (
-                  <ul className="mt-3 space-y-1.5 text-left text-[11px] text-gray-700">
-                    {it.details.map((detail, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="mr-1.5 text-blue-600 font-bold">•</span>
-                        <span>{detail}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </>
-            )}
           </div>
         ))}
       </div>

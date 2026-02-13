@@ -1,89 +1,71 @@
-import { FaChalkboardTeacher, FaRocket, FaCertificate, FaCogs, FaRobot, FaLightbulb, FaHandshake } from "react-icons/fa";
+import { FaGraduationCap, FaCogs, FaUserTie, FaHandshake, FaCertificate, FaRobot } from "react-icons/fa";
 
 const ITEMS = [
   {
     key: "steam",
     title: "Comprehensive STEAM Curriculum",
-    desc: "We integrate Science, Technology, Engineering, Arts, and Mathematics (STEAM) into every course. Our curriculum is aligned with NEP 2020 and designed for various age groups — from primary school students to engineering graduates.",
     details: [
-      "Robotics & Coding for School Students (Grade 1 to 10)",
-      "AI, ML, and IoT for High School & College",
-      "Advanced Projects for Diploma/Engineering Students"
+      "Aligned with CBSE, ICSE, IB & State Boards",
+      "Covers Robotics, Coding, AI & IoT",
+      "Designed for all learner levels",
+      "Future ready academic integration"
     ],
-    icon: FaLightbulb,
+    icon: FaGraduationCap,
   },
   {
-    key: "instructors",
-    title: "Project-Based, Hands-On Learning",
-    desc: "Students learn by building and doing, not just watching. We ensure every student:",
+    key: "handson",
+    title: "Hands On, Project Based Learning",
     details: [
-      "Builds their own working robots",
-      "Programs with real code (Python, C, Scratch, Blockly)",
-      "Works on real-time AI, IoT, and automation projects",
-      "Participates in exhibitions, hackathons, and tech fairs"
+      "Build real robots & prototypes",
+      "Code using Python, C & Scratch",
+      "Create AI/IoT automation projects",
+      "Participate in tech fairs & events"
     ],
-    icon: FaChalkboardTeacher,
+    icon: FaCogs,
   },
   {
-    key: "certs",
-    title: "Experienced Mentors & Engineers",
-    desc: "Our trainers are not just teachers — they are industry professionals, researchers, and certified experts from JoinBotics Technology Pvt Ltd, Bangalore with experience in:",
+    key: "mentors",
+    title: "Expert Mentors & Industry Guidance",
     details: [
-      "Embedded Systems",
-      "Robotics Automation",
-      "Artificial Intelligence",
-      "EdTech innovation"
+      "Trainers skilled in Robotics & AI",
+      "Backed by engineering expertise",
+      "Practical, learn by doing support",
+      "High quality program delivery"
     ],
-    icon: FaRocket,
+    icon: FaUserTie,
   },
   {
-    key: "partnerships",
-    title: "Strong Institutional Partnerships",
-    desc: "We collaborate with leading schools, colleges, and activity centers. Our notable partners include:",
+    key: "trusted",
+    title: "Trusted by Institutions",
     details: [
-      "Gaikwad Global School",
-      "Riverdale School",
-      "Engineering Institutes across India"
+      "120+ partnered schools",
+      "100+ workshops completed",
+      "Adopted by schools & colleges",
+      "Proven scalable implementation"
+    ],
+    icon: FaHandshake,
+  },
+  {
+    key: "certification",
+    title: "AI/ML Certification Pathways",
+    details: [
+      "AI CERTs® certification partner",
+      "Validated AI/ML skill tracks",
+      "Supports portfolio development",
+      "Enables institution wide upskilling"
     ],
     icon: FaCertificate,
   },
   {
-    key: "courses",
-    title: "Skill Development with Industry Relevance",
-    desc: "We teach students the skills that matter today and tomorrow:",
+    key: "labsetup",
+    title: "Complete Lab & Program Setup",
     details: [
-      "Programming (Python, C, Java)",
-      "AI & Machine Learning with real datasets",
-      "Internet of Things (IoT) using microcontrollers",
-      "Drone technology and 3D designing",
-      "Augmented & Virtual Reality applications",
-      "Blockchain concepts for beginners"
-    ],
-    note: "More focus on IoT, AI/ML and Blockchain",
-    icon: FaCogs,
-  },
-  {
-    key: "projects",
-    title: "Certified Programs & Career Support",
-    desc: "Students receive certificates and portfolios that boost their academic and professional profiles. We also:",
-    details: [
-      "Help build real project documentation",
-      "Prepare students for national/international competitions",
-      "Offer internships and mentorship opportunities"
+      "Robotics/AI/IoT lab design & setup",
+      "Faculty training & enablement",
+      "Curriculum planning support",
+      "Smooth end to end execution"
     ],
     icon: FaRobot,
-  },
-  {
-    key: "custom",
-    title: "Custom Solutions for Institutions",
-    desc: "Whether you're a school, college, or after-school center, we provide:",
-    details: [
-      "End-to-end curriculum planning",
-      "Faculty training and infrastructure setup",
-      "Robotics/AI/Coding-lab design and execution",
-      "Annual tech events and exhibitions"
-    ],
-    icon: FaHandshake,
   },
 ];
 
@@ -99,20 +81,16 @@ const ICON_COLORS = [
 
 export default function WhyJoin() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-8" aria-labelledby="why-join-heading">
+    <section className="mx-auto max-w-6xl px-6 pt-16 pb-8" aria-labelledby="why-join-heading">
       <div className="flex flex-col gap-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <div>
-            <p className="text-sm font-medium rounded-full px-3 py-1 bg-white/60 backdrop-blur-md inline-block text-gray-700 border-2 border-white/40 shadow-sm">WHY CHOOSE US</p>
-            <h2 id="why-join-heading" className="mt-4 text-3xl font-bold">Why JoinBotics is The Right Choice for You?</h2>
+            <h2 id="why-join-heading" className="text-3xl font-bold text-center">Why JoinBotics is The Right Choice for You?</h2>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-min gap-6">
-          {Array.from({ length: 9 }).map((_, i) => {
-            const item = ITEMS[i];
-            if (!item) return <div key={i} />;
-
+          {ITEMS.map((item, i) => {
             const Icon = item.icon;
 
             const color = ICON_COLORS[i] || 'currentColor';
@@ -131,10 +109,9 @@ export default function WhyJoin() {
 
                   <div className="flex flex-col flex-1">
                     <h3 className="text-lg font-semibold text-gray-900 group-hover:text-white transition-colors">{item.title}</h3>
-                    <p className="mt-2 text-gray-600 text-sm group-hover:text-white transition-colors">{item.desc}</p>
                     
                     {item.details && item.details.length > 0 && (
-                      <ul className="mt-3 space-y-1 text-xs text-gray-600 group-hover:text-white/90 transition-colors">
+                      <ul className="mt-4 space-y-2 text-sm text-gray-700 group-hover:text-white/90 transition-colors">
                         {item.details.map((detail, idx) => (
                           <li key={idx} className="flex items-start">
                             <span className="mr-1.5">•</span>
@@ -142,12 +119,6 @@ export default function WhyJoin() {
                           </li>
                         ))}
                       </ul>
-                    )}
-                    
-                    {item.note && (
-                      <p className="mt-2 text-xs italic text-gray-500 group-hover:text-white/80 transition-colors">
-                        Note: {item.note}
-                      </p>
                     )}
                   </div>
                 </div>

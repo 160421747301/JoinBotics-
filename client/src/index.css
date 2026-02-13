@@ -27,22 +27,22 @@ body{
 
 @keyframes shimmer {
 	0% {
-		text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+		text-shadow: 0 0 1.5px rgba(255, 255, 255, 0.225);
 	}
-	50% {
+	28.5% {
 		text-shadow: 
-			0 0 12px rgba(255, 255, 255, 1),
-			0 0 24px rgba(255, 255, 255, 0.8),
-			0 0 36px rgba(255, 255, 255, 0.6);
+			0 0 9px rgba(255, 255, 255, 0.75),
+			0 0 18px rgba(255, 255, 255, 0.6),
+			0 0 27px rgba(255, 255, 255, 0.45);
 	}
-	100% {
-		text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+	57%, 100% {
+		text-shadow: 0 0 1.5px rgba(255, 255, 255, 0.225);
 	}
 }
 
 .shimmer-text {
 	display: inline;
-	animation: shimmer 4s ease-in-out infinite;
+	animation: shimmer 7s ease-in-out infinite;
 }
 
 .shimmer-delay {

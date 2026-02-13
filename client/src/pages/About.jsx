@@ -145,7 +145,7 @@ export default function About() {
           >
             <div className="flex items-center gap-3 mb-4">
               <FaCheckCircle className="text-4xl text-[#c11e38]" />
-              <h2 className="text-3xl font-bold">NEP 2020 Aligned</h2>
+              <h2 className="text-3xl font-bold">Our Mission</h2>
             </div>
             <p className="text-gray-700 leading-relaxed mb-4">
               JoinBotics fully aligns with the National Education Policy (NEP) 2020 by:

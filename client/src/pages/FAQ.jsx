@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { FaQuestionCircle, FaChevronDown, FaChevronUp, FaSearch, FaRobot, FaGraduationCap, FaUsers, FaMoneyBillWave } from "react-icons/fa";
+import { FaQuestionCircle, FaChevronDown, FaChevronUp, FaSearch, FaRobot, FaGraduationCap, FaUsers, FaMoneyBillWave, FaTools } from "react-icons/fa";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 export default function FAQ() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -128,10 +129,10 @@ export default function FAQ() {
               <FaQuestionCircle />
               <span className="font-semibold">Help Center</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
               Find answers to common questions about JoinBotics programs, courses, and services
             </p>
           </motion.div>
@@ -325,6 +326,8 @@ export default function FAQ() {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

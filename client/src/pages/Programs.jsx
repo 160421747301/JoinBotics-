@@ -4,14 +4,14 @@ import Footer from "../components/Footer";
 import { FaSchool, FaBuilding, FaUserGraduate, FaLaptopCode, FaCheckCircle } from "react-icons/fa";
 
 const TABS = [
-  { id: "schools", label: "For Schools", icon: FaSchool },
-  { id: "institutions", label: "For Institutions", icon: FaBuilding },
-  { id: "students", label: "For Students", icon: FaUserGraduate },
-  { id: "engineering", label: "Engineering Students", icon: FaLaptopCode },
+  { id: "technoTamersLab", label: "Techno Tamers Lab", icon: FaSchool },
+  { id: "activityCenter", label: "Activity Center", icon: FaUserGraduate },
+  { id: "college", label: "College", icon: FaBuilding },
+  { id: "corporateTraining", label: "Corporate Training", icon: FaLaptopCode },
 ];
 
 const CONTENT = {
-  schools: {
+  technoTamersLab: {
     title: "Empowering Schools with Future-Ready Tech Labs",
     subtitle: "Complete STEAM education solutions for K-12 schools",
     services: [
@@ -51,7 +51,7 @@ const CONTENT = {
       }
     ]
   },
-  institutions: {
+  college: {
     title: "Advanced Tech Education for Higher Learning",
     subtitle: "Bringing industry-relevant programs to colleges and skill hubs",
     services: [
@@ -89,7 +89,7 @@ const CONTENT = {
       }
     ]
   },
-  students: {
+  activityCenter: {
     title: "Explore, Learn, and Innovate",
     subtitle: "Programs designed for young minds to discover their potential",
     services: [
@@ -127,7 +127,7 @@ const CONTENT = {
       }
     ]
   },
-  engineering: {
+  corporateTraining: {
     title: "Project-Based Learning for Engineers",
     subtitle: "Industry-ready skills through hands-on experience",
     services: [
@@ -191,7 +191,7 @@ const CONTENT = {
 };
 
 export default function Programs() {
-  const [activeTab, setActiveTab] = useState("schools");
+  const [activeTab, setActiveTab] = useState("technoTamersLab");
 
   const currentContent = CONTENT[activeTab];
 
@@ -215,9 +215,9 @@ export default function Programs() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Programs & Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Explore Our Programs</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Comprehensive STEAM education solutions for schools, institutions, students, and engineers
+              Techno Tamers Lab • Activity Center • College • Corporate Training
             </p>
           </motion.div>
         </div>

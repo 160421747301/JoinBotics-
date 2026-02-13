@@ -3,30 +3,30 @@ import { FaRobot, FaBrain, FaCode, FaNetworkWired, FaVrCardboard, FaCube, FaShie
 const AGE_PATHWAYS = [
   {
     id: 1,
-    grades: "Grade 1-2",
+    grades: "Primary (Ages 6-7)",
     title: "Tinker & Play",
-    desc: "Introduction to basic STEM concepts through fun activities and simple projects.",
+    desc: "A playful introduction to STEM through engaging activities and simple hands‑on projects.",
     color: "from-pink-500 to-rose-500",
   },
   {
     id: 2,
-    grades: "Grade 3-5",
+    grades: "Elementary (Ages 8-10)",
     title: "Build & Explore",
-    desc: "Hands-on building with robotics kits, basic coding with block programming.",
+    desc: "Hands‑on learning with robotics kits and beginner‑friendly block coding to strengthen foundational skills.",
     color: "from-orange-500 to-amber-500",
   },
   {
     id: 3,
-    grades: "Grade 6-8",
+    grades: "Middle School (Ages 11-13)",
     title: "Innovate & Create",
-    desc: "Advanced robotics, Python programming, AI concepts, and IoT projects.",
+    desc: "Deeper exploration of robotics, Python coding, AI fundamentals, and IoT‑based project building.",
     color: "from-[#c11e38] to-[#220b34]",
   },
   {
     id: 4,
-    grades: "Grade 9+",
+    grades: "High School & Beyond (Ages 14+)",
     title: "Future Tech Leaders",
-    desc: "AI/ML, Drone tech, VR/AR, Blockchain, and competition-level projects.",
+    desc: "Advanced learning in AI/ML, drones, VR/AR, and blockchain through real‑world, competition‑level projects.",
     color: "from-purple-500 to-violet-500",
   },
 ];
@@ -46,10 +46,7 @@ export default function CurriculumStructure() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-12" aria-labelledby="curriculum-heading">
       <div className="text-center mb-12">
-        <p className="text-sm font-medium rounded-full px-3 py-1 bg-white/60 backdrop-blur-md inline-block text-gray-700 border-2 border-white/40 shadow-sm">
-          CURRICULUM
-        </p>
-        <h2 id="curriculum-heading" className="mt-4 text-3xl md:text-4xl font-bold">
+        <h2 id="curriculum-heading" className="text-3xl md:text-4xl font-bold">
           Age-Based Learning Pathways
         </h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
