@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import { FaGlobe, FaUsers, FaRobot, FaGraduationCap, FaMapMarkerAlt, FaStar } from "react-icons/fa";
+import { FaGlobe, FaUsers, FaRobot, FaGraduationCap, FaMapMarkerAlt, FaStar, FaCode, FaBrain, FaMicrochip, FaCube, FaHelicopter, FaVrCardboard, FaNetworkWired } from "react-icons/fa";
 
 const STATS = [
   { icon: FaUsers, value: "1,00,000+", label: "Students Trained", desc: "From Grade 1 to Engineering | Robotics, Coding, AI & Drones" },
@@ -16,55 +16,63 @@ const PROGRAMS = [
     title: "Robotics",
     desc: "Design, build, and code robots using Arduino, Quarky, and WhalesBot platforms.",
     color: "from-[#c11e38] to-[#8a1532]",
+    iconColor: "text-[#c11e38]",
   },
   {
     id: 2,
-    icon: "💻",
+    icon: FaCode,
     title: "Coding",
     desc: "From Scratch to Python to Java — level-wise curriculum for logic building.",
     color: "from-[#8a1532] to-[#220b34]",
+    iconColor: "text-[#220b34]",
   },
   {
     id: 3,
-    icon: "🧠",
+    icon: FaBrain,
     title: "AI/ML",
     desc: "Build chatbots and intelligent models with machine learning concepts.",
     color: "from-purple-500 to-purple-600",
+    iconColor: "text-purple-600",
   },
   {
     id: 4,
-    icon: "⚡",
+    icon: FaMicrochip,
     title: "Electronics & IoT",
     desc: "Circuit design, sensor interfacing, and connected device automation.",
     color: "from-yellow-500 to-yellow-600",
+    iconColor: "text-yellow-600",
   },
   {
     id: 5,
-    icon: "🖨️",
+    icon: FaCube,
     title: "3D Printing",
     desc: "Design and print prototypes using TinkerCAD and Fusion 360.",
     color: "from-pink-500 to-pink-600",
+    iconColor: "text-pink-600",
   },
   {
     id: 6,
-    icon: "✈️",
+    icon: FaHelicopter,
     title: "Drone Technology",
     desc: "Drone assembly, flight control, and aerial coding with safety training.",
     color: "from-[#c11e38] to-[#220b34]",
+    iconColor: "text-[#c11e38]",
   },
   {
     id: 7,
-    icon: "🕶️",
+    icon: FaVrCardboard,
     title: "VR/XR",
     desc: "Immersive virtual environments using Unity and WebXR platforms.",
     color: "from-indigo-500 to-indigo-600",
+    iconColor: "text-indigo-600",
   },
   {
     id: 8,
-    icon: "🌐",
+    icon: FaNetworkWired,
     title: "IoT & Blockchain",
     desc: "Connect devices and understand decentralized technologies.",
     color: "from-orange-500 to-orange-600",
+    iconColor: "text-orange-600",
   },
 ];
 
@@ -253,22 +261,25 @@ export default function GlobalExposure() {
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {PROGRAMS.map((program, idx) => (
-            <motion.div
-              key={program.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.05 }}
-              className="group rounded-xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg hover:shadow-xl transition-all text-center hover:scale-105"
-            >
-              <div className={`text-4xl mb-3 bg-gradient-to-r ${program.color} bg-clip-text text-transparent font-bold`}>
-                {typeof program.icon === 'string' ? program.icon : <program.icon />}
-              </div>
-              <h3 className="font-bold text-gray-900 mb-2">{program.title}</h3>
-              <p className="text-xs text-gray-600">{program.desc}</p>
-            </motion.div>
-          ))}
+          {PROGRAMS.map((program, idx) => {
+            const Icon = program.icon;
+            return (
+              <motion.div
+                key={program.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.05 }}
+                className="group rounded-xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg hover:shadow-xl transition-all text-center hover:scale-105"
+              >
+                <div className="mb-3 flex justify-center">
+                  <Icon className={`text-5xl ${program.iconColor} group-hover:scale-110 transition-transform duration-300`} />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">{program.title}</h3>
+                <p className="text-xs text-gray-600">{program.desc}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
 
