@@ -3,13 +3,10 @@ import Footer from "../components/Footer";
 import { FaAward, FaCheckCircle, FaHandshake, FaLightbulb } from "react-icons/fa";
 
 const TIMELINE = [
-  { year: "2019", milestone: "Founded with a vision to bring robotics to every student" },
-  { year: "2020", milestone: "Launched first school partnerships and STEAM curriculum" },
-  { year: "2021", milestone: "Expanded to 20+ schools, trained 5,000+ students" },
-  { year: "2022", milestone: "Introduced ATL setup services and advanced AI/ML programs" },
-  { year: "2023", milestone: "Reached 50+ school partnerships, 50,000+ students trained" },
-  { year: "2024", milestone: "Awarded at 9th Global Education Summit, expanded to multiple states" },
-  { year: "2025", milestone: "Achieved 100,000+ students milestone, launched engineering programs" },
+  { year: "2018", milestone: "Launched JoinBotics with a vision to transform STEM education" },
+  { year: "2019", milestone: "Achieved milestone number of schools and expanded to other states" },
+  { year: "2021", milestone: "Started online coding classes for international students" },
+  { year: "2025", milestone: "Received award in Delhi for excellence in education" },
 ];
 
 const TEAM_MEMBERS = [
@@ -18,21 +15,22 @@ const TEAM_MEMBERS = [
     name: "Mr. Javed Dodamani",
     role: "Founder & CEO",
     quote: "Every child is a creator — our job is to unlock their tools.",
-    experience: "15+ years in EdTech and Robotics Innovation",
+    experience: "25+ years in EdTech and Robotics Innovation",
+    image: "/assets/Javid-Joinbotics.jpeg",
   },
   {
     id: 2,
-    name: "Mr. Balaji",
-    role: "Director",
-    quote: "Robotics isn't just wires and code — it's imagination made real.",
-    experience: "20+ years in Education Technology",
+    name: "Ms. Kavya",
+    role: "Academic Head",
+    quote: "Designing tomorrow's learning experiences today.",
+    experience: "Curriculum Design & STEAM Education",
   },
   {
     id: 3,
-    name: "Academic Head",
-    role: "Head of Curriculum",
-    quote: "Designing tomorrow's learning experiences today.",
-    experience: "Curriculum Design & STEAM Education",
+    name: "Ms. Snehal",
+    role: "Academic Head",
+    quote: "Empowering educators to inspire the next generation.",
+    experience: "Educational Leadership & Program Development",
   },
   {
     id: 4,
@@ -188,11 +186,11 @@ export default function About() {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline Line - Desktop */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-white via-[#c11e38] via-[#220b34] to-white hidden md:block" />
+          {/* Timeline Line - Desktop with Glow */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-white via-[#c11e38] via-[#220b34] to-white hidden md:block shadow-[0_0_15px_rgba(193,30,56,0.5)]" />
           
-          {/* Timeline Line - Mobile */}
-          <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-white via-[#c11e38] via-[#220b34] to-white md:hidden" />
+          {/* Timeline Line - Mobile with Glow */}
+          <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-white via-[#c11e38] via-[#220b34] to-white md:hidden shadow-[0_0_10px_rgba(193,30,56,0.4)]" />
 
           <div className="space-y-8">
             {TIMELINE.map((item, idx) => (
@@ -206,27 +204,69 @@ export default function About() {
               >
                 {/* Desktop Layout */}
                 <div className={`flex-1 hidden md:block ${idx % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                  <div className="rounded-2xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg">
-                    <div className="text-2xl font-bold text-[#220b34] mb-2">{item.year}</div>
-                    <p className="text-gray-700">{item.milestone}</p>
-                  </div>
+                  <motion.div 
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="rounded-2xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg hover:shadow-2xl hover:shadow-[#c11e38]/20 transition-all duration-300 relative overflow-hidden group"
+                  >
+                    {/* Shimmer Effect on Hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                    
+                    <div className="relative z-10">
+                      <div className="text-2xl font-bold text-[#220b34] mb-2 drop-shadow-[0_0_8px_rgba(193,30,56,0.3)]">
+                        {item.year}
+                      </div>
+                      <p className="text-gray-700">{item.milestone}</p>
+                    </div>
+                  </motion.div>
                 </div>
                 
-                {/* Timeline Dot */}
-                <div className="w-8 h-8 rounded-full bg-[#c11e38] border-4 border-white shadow-lg flex-shrink-0 z-10 hidden md:flex" />
+                {/* Timeline Dot with Pulsing Glow - Desktop */}
+                <motion.div 
+                  animate={{ 
+                    boxShadow: [
+                      "0 0 10px rgba(193, 30, 56, 0.5)",
+                      "0 0 25px rgba(193, 30, 56, 0.8)",
+                      "0 0 10px rgba(193, 30, 56, 0.5)"
+                    ]
+                  }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c11e38] to-[#220b34] border-4 border-white flex-shrink-0 z-10 hidden md:flex"
+                />
                 
-                {/* Mobile Dot */}
-                <div className="w-8 h-8 rounded-full bg-[#c11e38] border-4 border-white shadow-lg flex-shrink-0 z-10 md:hidden" />
+                {/* Mobile Dot with Pulsing Glow */}
+                <motion.div 
+                  animate={{ 
+                    boxShadow: [
+                      "0 0 8px rgba(193, 30, 56, 0.5)",
+                      "0 0 20px rgba(193, 30, 56, 0.8)",
+                      "0 0 8px rgba(193, 30, 56, 0.5)"
+                    ]
+                  }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c11e38] to-[#220b34] border-4 border-white flex-shrink-0 z-10 md:hidden"
+                />
                 
                 {/* Desktop Spacer */}
                 <div className="flex-1 hidden md:block" />
                 
                 {/* Mobile Layout */}
                 <div className="flex-1 md:hidden">
-                  <div className="rounded-2xl bg-white/60 backdrop-blur-md border border-white/30 p-4 shadow-lg">
-                    <div className="text-xl font-bold text-[#220b34] mb-2">{item.year}</div>
-                    <p className="text-gray-700 text-sm">{item.milestone}</p>
-                  </div>
+                  <motion.div 
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="rounded-2xl bg-white/60 backdrop-blur-md border border-white/30 p-4 shadow-lg hover:shadow-xl hover:shadow-[#c11e38]/15 transition-all duration-300 relative overflow-hidden group"
+                  >
+                    {/* Shimmer Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                    
+                    <div className="relative z-10">
+                      <div className="text-xl font-bold text-[#220b34] mb-2 drop-shadow-[0_0_6px_rgba(193,30,56,0.3)]">
+                        {item.year}
+                      </div>
+                      <p className="text-gray-700 text-sm">{item.milestone}</p>
+                    </div>
+                  </motion.div>
                 </div>
               </motion.div>
             ))}
@@ -260,10 +300,20 @@ export default function About() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 className="group rounded-2xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg hover:shadow-xl transition-all"
               >
-                {/* Placeholder for photo */}
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#c11e38] to-[#220b34] mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
-                  {member.name.charAt(0)}
-                </div>
+                {/* Photo or Placeholder */}
+                {member.image ? (
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover object-center scale-110"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#c11e38] to-[#220b34] mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                    {member.name.charAt(0)}
+                  </div>
+                )}
                 <h3 className="text-xl font-bold text-center mb-1">{member.name}</h3>
                 <p className="text-sm text-blue-600 text-center mb-2">{member.role}</p>
                 <p className="text-xs text-gray-600 text-center mb-3">{member.experience}</p>

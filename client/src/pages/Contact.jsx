@@ -13,22 +13,15 @@ const OFFICES = [
     email: "connect@joinbotics.com"
   },
   {
-    city: "Pune",
-    address: "JoinBotics Office, Maharashtra",
-    phones: ["+919986780347", "+916361212260"],
-    phoneDisplay: "+91 99867 80347 / +91 63612 12260",
-    email: "connect@joinbotics.com"
-  },
-  {
     city: "Aurangabad",
-    address: "JoinBotics Center, Chh. Sambhaji Nagar, Maharashtra",
+    address: "Divya Pariwartan Computers, Chh. Sambhaji Nagar, Maharashtra",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
   },
   {
-    city: "Ahmedabad",
-    address: "JoinBotics Hub, Gujarat",
+    city: "Hyderabad",
+    address: "JoinBotics Office, Telangana",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
@@ -74,7 +67,7 @@ export default function Contact() {
 
   const handleWhatsApp = () => {
     const message = "Hi! I'm interested in learning more about JoinBotics programs.";
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/919986780347?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (
@@ -166,7 +159,7 @@ export default function Contact() {
                   <label className="block text-sm font-semibold mb-2">Phone Number</label>
                   <input
                     {...register("phone")}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 99867 80347"
                     className="w-full rounded-lg border border-gray-300 p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
                   />
                 </div>
@@ -236,8 +229,8 @@ export default function Contact() {
                   <FaEnvelope className="text-blue-600 text-xl mt-1" />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <a href="mailto:info@joinbotics.com" className="text-blue-600 hover:underline">
-                      info@joinbotics.com
+                    <a href="mailto:connect@joinbotics.com" className="text-blue-600 hover:underline">
+                      connect@joinbotics.com
                     </a>
                   </div>
                 </div>
@@ -245,9 +238,18 @@ export default function Contact() {
                   <FaPhone className="text-blue-600 text-xl mt-1" />
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <a href="tel:+919876543210" className="text-blue-600 hover:underline">
-                      +91 98765 43210
-                    </a>
+                    <div className="space-y-1">
+                      <div>
+                        <a href="tel:+919986780347" className="text-blue-600 hover:underline">
+                          +91 99867 80347
+                        </a>
+                      </div>
+                      <div>
+                        <a href="tel:+916361212260" className="text-blue-600 hover:underline">
+                          +91 63612 12260
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -272,7 +274,7 @@ export default function Contact() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {OFFICES.map((office, idx) => (
               <motion.div
                 key={idx}
@@ -282,22 +284,22 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 className="rounded-xl bg-white/60 backdrop-blur-md border border-white/30 p-6 shadow-lg hover:shadow-xl transition-all"
               >
-                <FaMapMarkerAlt className="text-3xl text-[#220b34] mb-3" />
-                <h3 className="text-xl font-bold mb-3">{office.city}</h3>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>{office.address}</p>
-                  <p className="flex items-center gap-2">
-                    <FaPhone className="text-blue-500 flex-shrink-0" />
-                    <div className="flex gap-2">
-                      <a href={`tel:${office.phones[0]}`} className="hover:text-blue-600 transition">+91 99867 80347</a>
-                      <span>/</span>
-                      <a href={`tel:${office.phones[1]}`} className="hover:text-blue-600 transition">+91 63612 12260</a>
+                <FaMapMarkerAlt className="text-3xl text-[#220b34] mb-4" />
+                <h3 className="text-xl font-bold mb-4">{office.city}</h3>
+                <div className="space-y-3 text-sm text-gray-600">
+                  <p className="leading-relaxed">{office.address}</p>
+                  <div className="flex items-start gap-2">
+                    <FaPhone className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <div className="flex flex-wrap items-center gap-1">
+                      <a href={`tel:${office.phones[0]}`} className="hover:text-blue-600 transition whitespace-nowrap">+91 99867 80347</a>
+                      <span className="text-gray-400">/</span>
+                      <a href={`tel:${office.phones[1]}`} className="hover:text-blue-600 transition whitespace-nowrap">+91 63612 12260</a>
                     </div>
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <FaEnvelope className="text-blue-500 flex-shrink-0" />
-                    <a href={`mailto:${office.email}`} className="hover:text-blue-600 transition">{office.email}</a>
-                  </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <FaEnvelope className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <a href={`mailto:${office.email}`} className="hover:text-blue-600 transition break-all">{office.email}</a>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -325,37 +327,6 @@ export default function Contact() {
             className="w-full"
           />
         </motion.div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white py-16">
-        <div className="mx-auto max-w-4xl px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay Updated</h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest updates on courses, events, and tech trends
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-6 py-4 rounded-lg text-gray-900 outline-none focus:ring-4 focus:ring-white/30 transition"
-              />
-              <button className="px-8 py-4 bg-white text-[#c11e38] rounded-lg font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-                Subscribe
-              </button>
-            </div>
-            <p className="text-sm text-white/70 mt-4">
-              Join 10,000+ educators, students, and parents receiving our monthly updates
-            </p>
-          </motion.div>
-        </div>
       </section>
 
       <Footer />

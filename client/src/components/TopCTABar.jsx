@@ -17,11 +17,11 @@ export default function TopCTABar() {
         
         <div className="flex items-center gap-3">
           <a
-            href="tel:+919876543210"
+            href="tel:+919986780347"
             className="hidden md:flex items-center gap-2 text-sm hover:underline"
           >
             <FaPhone className="text-xs" />
-            <span>+91 98765 43210</span>
+            <span>+91 99867 80347</span>
           </a>
           
           <a

@@ -103,9 +103,9 @@ export default function Footer() {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl py-4 px-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-slate-300 text-sm">© {new Date().getFullYear()} JoinBotics, Inc. All rights reserved.</div>
               <div className="flex items-center gap-6">
-                <a className="text-slate-300 text-sm hover:text-white" href="#">Privacy Policy</a>
-                <a className="text-slate-300 text-sm hover:text-white" href="#">Terms of Service</a>
-                <a className="text-slate-300 text-sm hover:text-white" href="#">Report an Issue</a>
+                <a className="text-slate-300 text-sm hover:text-white" href="/privacy-policy">Privacy Policy</a>
+                <a className="text-slate-300 text-sm hover:text-white" href="/terms-of-service">Terms of Service</a>
+                <a className="text-slate-300 text-sm hover:text-white" href="/contact">Report an Issue</a>
               </div>
             </div>
           </div>
