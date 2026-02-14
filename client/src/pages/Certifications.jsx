@@ -46,8 +46,8 @@ export default function Certifications() {
           50% { transform: translateY(-20px); }
         }
         @keyframes glow-pulse {
-          0%, 100% { box-shadow: 0 0 15px rgba(193, 30, 56, 0.3), 0 0 25px rgba(193, 30, 56, 0.2); }
-          50% { box-shadow: 0 0 25px rgba(193, 30, 56, 0.5), 0 0 45px rgba(193, 30, 56, 0.3); }
+          0%, 100% { box-shadow: 0 0 15px rgba(193, 30, 56, 0.15), 0 0 25px rgba(193, 30, 56, 0.1); }
+          50% { box-shadow: 0 0 25px rgba(193, 30, 56, 0.25), 0 0 45px rgba(193, 30, 56, 0.15); }
         }
         @keyframes shimmer {
           0% { transform: translateX(-100%) skewX(-15deg); }
@@ -150,9 +150,9 @@ export default function Certifications() {
             <motion.div
               animate={{
                 boxShadow: [
-                  '0 0 20px rgba(193, 30, 56, 0.25)',
-                  '0 0 40px rgba(193, 30, 56, 0.5)',
-                  '0 0 20px rgba(193, 30, 56, 0.25)',
+                  '0 0 20px rgba(193, 30, 56, 0.12)',
+                  '0 0 40px rgba(193, 30, 56, 0.25)',
+                  '0 0 20px rgba(193, 30, 56, 0.12)',
                 ],
               }}
               transition={{
@@ -160,11 +160,11 @@ export default function Certifications() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-[#c11e38]/15 via-[#220b34]/15 to-[#c11e38]/15 blur-xl"
+              className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-[#c11e38]/8 via-[#220b34]/8 to-[#c11e38]/8 blur-xl"
             ></motion.div>
 
             {/* Main Certificate Container */}
-            <div className="relative bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl p-6 md:p-10 shadow-2xl border-4 border-[#c11e38]/30 overflow-hidden animate-glow-pulse">
+            <div className="relative bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl p-6 md:p-10 shadow-2xl border-4 border-[#c11e38]/20 overflow-hidden animate-glow-pulse">
               {/* Shimmer Effect Overlay */}
               <motion.div
                 animate={{
@@ -199,85 +199,6 @@ export default function Certifications() {
                     alt="AI Certs Authorized Training Partner Certificate - JoinBotics"
                     className="w-full h-auto object-contain"
                   />
-                </div>
-                
-                {/* Floating Sparkle Effects */}
-                <motion.div
-                  animate={{
-                    opacity: [0.4, 1, 0.4],
-                    scale: [0.8, 1.3, 0.8],
-                    rotate: [0, 180, 360],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute top-12 right-12 w-4 h-4 bg-gradient-to-r from-yellow-400 to-yellow-200 rounded-full"
-                  style={{ filter: 'blur(2px)' }}
-                ></motion.div>
-                <motion.div
-                  animate={{
-                    opacity: [0.4, 1, 0.4],
-                    scale: [0.8, 1.3, 0.8],
-                    rotate: [360, 180, 0],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.8,
-                  }}
-                  className="absolute top-1/3 left-12 w-3 h-3 bg-gradient-to-r from-yellow-300 to-yellow-100 rounded-full"
-                  style={{ filter: 'blur(2px)' }}
-                ></motion.div>
-                <motion.div
-                  animate={{
-                    opacity: [0.4, 1, 0.4],
-                    scale: [0.8, 1.3, 0.8],
-                    rotate: [0, -180, -360],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1.6,
-                  }}
-                  className="absolute bottom-24 right-1/4 w-3 h-3 bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-full"
-                  style={{ filter: 'blur(2px)' }}
-                ></motion.div>
-                <motion.div
-                  animate={{
-                    opacity: [0.4, 1, 0.4],
-                    scale: [0.8, 1.3, 0.8],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.4,
-                  }}
-                  className="absolute top-2/3 right-16 w-2 h-2 bg-yellow-400 rounded-full"
-                  style={{ filter: 'blur(1px)' }}
-                ></motion.div>
-              </motion.div>
-
-              {/* Premium Verification Badge */}
-              <motion.div
-                animate={{
-                  rotate: [0, 8, 0, -8, 0],
-                  scale: [1, 1.05, 1],
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="absolute -top-8 -right-8 bg-gradient-to-br from-[#c11e38] via-[#e63946] to-[#8a1532] text-white rounded-full p-5 shadow-2xl border-4 border-white"
-              >
-                <div className="text-center">
-                  <FaAward className="text-4xl mx-auto mb-1" />
-                  <p className="text-xs font-bold tracking-wider">VERIFIED</p>
                 </div>
               </motion.div>
             </div>
