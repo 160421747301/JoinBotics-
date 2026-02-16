@@ -85,7 +85,7 @@ export default function WhyJoin() {
       <div className="flex flex-col gap-8">
         <div className="flex items-center justify-center">
           <div>
-            <h2 id="why-join-heading" className="text-3xl font-bold text-center">Why JoinBotics is The Right Choice for You?</h2>
+            <h2 id="why-join-heading" className="text-3xl font-bold text-center">Why Join Botics is The Right Choice for You?</h2>
           </div>
         </div>
 

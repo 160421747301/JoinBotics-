@@ -2,7 +2,7 @@
   "name": "joinbotics-server",
   "version": "1.0.0",
   "type": "module",
-  "description": "Backend API for JoinBotics form submissions",
+  "description": "Backend API for Join Botics form submissions",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

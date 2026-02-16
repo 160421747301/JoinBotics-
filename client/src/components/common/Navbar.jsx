@@ -71,13 +71,13 @@ export default function Navbar() {
         transition={{ duration: 0.55, ease: "easeOut" }}
         className={headerClass}
       >
-      <div className="mx-auto max-w-7xl px-5">
-        <div className="flex items-center justify-between gap-4 px-0 py-4 min-h-[88px] transition-all duration-300">
+        <div className="mx-auto max-w-7xl px-5">
+          <div className="flex items-center justify-between gap-4 px-0 py-4 min-h-[88px] transition-all duration-300">
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img
               src="/assets/joinbotics-logo.svg"
               onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/assets/joinbotics-logo.png'; }}
-              alt="JoinBotics"
+              alt="Join Botics"
               className={`h-[70px] md:h-20 w-auto object-contain transition-all duration-300 ${!scrolled && isHomePage ? 'brightness-0 invert' : ''}`}
             />
           </Link>
@@ -93,16 +93,13 @@ export default function Navbar() {
             </NavLink>
 
             <NavLink to="/certifications" className={({ isActive }) => linkClass(isActive)}>
-              AI Certs
+              Certifications
             </NavLink>
 
             <NavLink to="/programs" className={({ isActive }) => linkClass(isActive)}>
               Programs
             </NavLink>
 
-            <NavLink to="/kits" className={({ isActive }) => linkClass(isActive)}>
-              Products
-            </NavLink>
 
             {/* More dropdown */}
             <div
@@ -146,8 +143,8 @@ export default function Navbar() {
                     <NavLink to="/ai-projects" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       AI Projects
                     </NavLink>
-                    <NavLink to="/blogs" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
-                      Blogs
+                    <NavLink to="/gallery" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
+                      Gallery
                     </NavLink>
                     <NavLink to="/careers" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       Careers
@@ -160,7 +157,7 @@ export default function Navbar() {
               )}
             </div>
           </nav>
-
+          
           <div className="flex items-center gap-3">
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -192,8 +189,8 @@ export default function Navbar() {
             </motion.button>
           </div>
         </div>
-      </div>
-    </motion.header>
+        </div>
+      </motion.header>
 
       {/* Mobile full-screen menu */}
       {mobileOpen && (
@@ -209,7 +206,7 @@ export default function Navbar() {
             {/* Header with logo and close button */}
             <div className="flex items-center justify-between mb-12 flex-shrink-0">
               <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
-                <img src="/assets/joinbotics-logo.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/assets/joinbotics-logo.png'; }} alt="JoinBotics" className="h-12 w-auto object-contain brightness-0 invert" />
+                <img src="/assets/joinbotics-logo.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/assets/joinbotics-logo.png'; }} alt="Join Botics" className="h-12 w-auto object-contain brightness-0 invert" />
               </Link>
               <button 
                 onClick={() => setMobileOpen(false)} 
@@ -241,7 +238,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)} 
                 className={({ isActive }) => `text-2xl font-semibold py-3 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/80 hover:text-white hover:bg-white/10'}`}
               >
-                AI Certs
+                Certifications
               </NavLink>
               <NavLink 
                 to="/programs" 
@@ -250,13 +247,7 @@ export default function Navbar() {
               >
                 Programs
               </NavLink>
-              <NavLink 
-                to="/kits" 
-                onClick={() => setMobileOpen(false)} 
-                className={({ isActive }) => `text-2xl font-semibold py-3 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/80 hover:text-white hover:bg-white/10'}`}
-              >
-                Products
-              </NavLink>
+
               
               {/* Divider */}
               <div className="border-t border-white/20 my-2"></div>
@@ -283,11 +274,11 @@ export default function Navbar() {
                 AI Projects
               </NavLink>
               <NavLink 
-                to="/blogs" 
+                to="/gallery" 
                 onClick={() => setMobileOpen(false)} 
                 className={({ isActive }) => `text-xl font-medium py-2 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/70 hover:text-white hover:bg-white/10'}`}
               >
-                Blogs
+                Gallery
               </NavLink>
               <NavLink 
                 to="/careers" 
@@ -307,7 +298,7 @@ export default function Navbar() {
 
             {/* Footer */}
             <div className="mt-8 text-center text-white/60 text-sm flex-shrink-0">
-              © 2026 JoinBotics. All rights reserved.
+              © 2026 Join Botics. All rights reserved.
             </div>
           </motion.div>
         </div>

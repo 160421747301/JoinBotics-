@@ -12,41 +12,43 @@ const TABS = [
 
 const CONTENT = {
   technoTamersLab: {
-    title: "Empowering Schools with Future-Ready Tech Labs",
-    subtitle: "Complete STEAM education solutions for K-12 schools",
+    title: "Empowering Schools with Future‑Ready STEM & AI Labs",
+    subtitle: "Complete, NEP‑aligned STEM solutions designed for K‑12 institutions.",
     services: [
       {
         title: "Techno Tamer Lab Setup",
         items: [
-          "State-of-the-art Robotics, AI, and Coding labs for K-12",
-          "Turnkey solutions from planning to execution",
-          "Hardware and software integration"
+          "Robotics, AI & Coding lab setup for schools (K–12)",
+          "End‑to‑end execution—from planning to deployment",
+          "Hardware + software integration with lab readiness support",
+          "Activity planning to enable continuous hands‑on learning"
         ]
       },
       {
         title: "Curriculum Integration",
         items: [
-          "Age-appropriate, NEP-aligned STEAM & Robotics syllabus",
-          "Structured modules from Grade 1 to 10",
-          "Covers Robotics, Coding, AI, IoT, Drones & 3D Printing"
+          "NEP‑aligned, age‑appropriate STEAM & Robotics curriculum",
+          "Structured learning pathway from Grade 1 onwards",
+          "Covers Robotics, Coding, AI/ML, IoT, Drones & 3D Printing",
+          "Project‑based modules with tracking and skill outcomes"
         ]
       },
       {
         title: "Teacher Training & Certification",
         items: [
-          "Well-Trained Faculties by JoinBotics experts",
-          "Expert JB-certified trainers conduct all sessions",
-          "Hands-on practical training for school teachers",
-          "Certification programs & professional development",
-          "Transform educators into certified 21st-century tech mentors"
+          "Faculty enablement through hands‑on, practical training",
+          "Sessions supported by expert mentors and engineers",
+          "Certification and professional development pathways",
+          "Build educator confidence to deliver STEM year‑round"
         ]
       },
       {
         title: "Annual Maintenance & Support",
         items: [
-          "Hardware and software support",
-          "Regular upgrades and troubleshooting",
-          "Dedicated support team"
+          "Ongoing hardware and software support for labs",
+          "Regular troubleshooting and system upkeep assistance",
+          "Dedicated support team for timely resolutions",
+          "Program continuity support for events and showcases"
         ]
       }
     ]
@@ -90,39 +92,39 @@ const CONTENT = {
     ]
   },
   activityCenter: {
-    title: "Explore, Learn, and Innovate",
-    subtitle: "Programs designed for young minds to discover their potential",
+    title: "Explore, Learn & Build",
+    subtitle: "Programs designed to help learners create with technology through hands-on STEM, Robotics & AI experiences.",
     services: [
       {
-        title: "Online/Offline Courses",
+        title: "Online / Offline Programs",
         items: [
-          "Robotics, Coding (Block/Python), AI & Drones",
-          "Structured modules for ages 7-16",
-          "Live interactive sessions with mentors"
+          "Learn Robotics, Coding & AI through structured modules",
+          "Build real projects with guided, hands-on activities",
+          "Interactive sessions led by experienced mentors"
         ]
       },
       {
-        title: "Holiday Camps & Workshops",
+        title: "Camps & Workshops",
         items: [
-          "Themed camps: Robo-Fun Factory, AI Explorers, Drone Champs",
-          "Engaging activities & take-home projects",
-          "Certificate of participation"
+          "Themed STEM, Robotics, AI & Drone camps for all ages",
+          "Engaging activities with fun, take‑home projects",
+          "Certificates awarded for participation and completion"
         ]
       },
       {
-        title: "Tech Talent Nurturing",
+        title: "Talent Development & Competitions",
         items: [
-          "Inter-school tech challenges",
-          "Portfolio building & certifications",
-          "Competition preparation and mentorship"
+          "Build strong tech portfolios with real-world projects",
+          "Mentorship for competitions, hackathons & showcases",
+          "Progressive pathways to strengthen technical skills"
         ]
       },
       {
-        title: "Junior Certifications",
+        title: "Certifications & Progress Tracking",
         items: [
-          "AI & Robotics certification at each level",
-          "Progressive skill development tracking",
-          "Recognition of achievements"
+          "STEM, Robotics & AI certification tracks at every level",
+          "Systematic skill tracking through assessments & milestones",
+          "Recognition of achievements with verified certificates"
         ]
       }
     ]
@@ -181,7 +183,7 @@ const CONTENT = {
       {
         title: "Tech Competitions & Hackathons",
         items: [
-          "Team participation under JoinBotics mentorship",
+          "Team participation under Join Botics mentorship",
           "Ideation to prototype development support",
           "Competition preparation and guidance"
         ]
@@ -215,7 +217,7 @@ export default function Programs() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Explore Our Programs</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Program Pathways</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Techno Tamers Lab • Activity Center • College • Corporate Training
             </p>
@@ -288,30 +290,6 @@ export default function Programs() {
             </a>
           </div>
         </motion.div>
-      </section>
-
-      {/* Additional Info */}
-      <section className="bg-gradient-to-r from-[#c11e38]/10 to-[#220b34]/10 py-16">
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Why Choose JoinBotics Programs?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div className="bg-white rounded-xl p-6 shadow">
-              <div className="text-4xl mb-3">🎯</div>
-              <h3 className="font-bold mb-2">NEP 2020 Aligned</h3>
-              <p className="text-sm text-gray-600">Curriculum designed to meet national education standards</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow">
-              <div className="text-4xl mb-3">👨‍🏫</div>
-              <h3 className="font-bold mb-2">Expert Trainers</h3>
-              <p className="text-sm text-gray-600">Industry professionals with years of experience</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow">
-              <div className="text-4xl mb-3">🏆</div>
-              <h3 className="font-bold mb-2">Proven Results</h3>
-              <p className="text-sm text-gray-600">100,000+ students trained with measurable outcomes</p>
-            </div>
-          </div>
-        </div>
       </section>
 
       <Footer />

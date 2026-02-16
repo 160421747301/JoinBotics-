@@ -43,7 +43,7 @@ export default function TermsOfService() {
               Agreement to Terms
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              These Terms of Service ("Terms") constitute a legally binding agreement between you and JoinBotics 
+              These Terms of Service ("Terms") constitute a legally binding agreement between you and Join Botics 
               concerning your access to and use of our website, services, and programs.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -66,7 +66,7 @@ export default function TermsOfService() {
           >
             <h2 className="text-2xl font-bold mb-4">Our Services</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              JoinBotics provides STEAM education solutions including:
+              Join Botics provides STEAM education solutions including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>Robotics, AI, and coding lab setup for educational institutions</li>
@@ -184,7 +184,7 @@ export default function TermsOfService() {
                 <h3 className="text-xl font-semibold mb-2 text-[#220b34]">Our Content</h3>
                 <p className="text-gray-700 leading-relaxed">
                   All content on our website and in our programs, including text, graphics, logos, images, videos, curriculum materials, 
-                  and software, is the property of JoinBotics or its licensors and is protected by copyright, trademark, and other 
+                  and software, is the property of Join Botics or its licensors and is protected by copyright, trademark, and other 
                   intellectual property laws.
                 </p>
               </div>
@@ -274,7 +274,7 @@ export default function TermsOfService() {
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-[#220b34]">Limitation of Liability</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To the fullest extent permitted by law, JoinBotics shall not be liable for any indirect, incidental, special, 
+                  To the fullest extent permitted by law, Join Botics shall not be liable for any indirect, incidental, special, 
                   consequential, or punitive damages arising from your use of our services. Our total liability shall not exceed 
                   the amount you paid for the specific service giving rise to the claim.
                 </p>
@@ -361,7 +361,7 @@ export default function TermsOfService() {
               If you have any questions about these Terms of Service, please contact us:
             </p>
             <div className="space-y-2 text-gray-700">
-              <p><strong>JoinBotics</strong></p>
+              <p><strong>Join Botics</strong></p>
               <p>Email: <a href="mailto:connect@joinbotics.com" className="text-[#c11e38] hover:underline">connect@joinbotics.com</a></p>
               <p>Phone: <a href="tel:+919986780347" className="text-[#c11e38] hover:underline">+91 99867 80347</a></p>
               <p>Website: <a href="/contact" className="text-[#c11e38] hover:underline">Contact Form</a></p>

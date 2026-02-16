@@ -6,8 +6,8 @@ export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
   
   // Replace with your actual WhatsApp number (use international format without + or spaces)
-  const whatsappNumber = "919986780347"; // JoinBotics primary number
-  const defaultMessage = "Hi! I'm interested in learning more about JoinBotics programs.";
+  const whatsappNumber = "919986780347"; // Join Botics primary number
+  const defaultMessage = "Hi! I'm interested in learning more about Join Botics programs.";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
@@ -95,7 +95,7 @@ export default function WhatsAppButton() {
                 className="w-full text-left px-4 py-3 rounded-lg bg-green-50 hover:bg-green-100 border border-green-200 transition-colors"
               >
                 <div className="font-semibold text-gray-900 text-sm">School Partnership</div>
-                <div className="text-xs text-gray-600">Partner with JoinBotics</div>
+                <div className="text-xs text-gray-600">Partner with Join Botics</div>
               </button>
             </div>
 

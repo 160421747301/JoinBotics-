@@ -5,11 +5,11 @@ import Certifications from "../pages/Certifications";
 import GlobalExposure from "../pages/GlobalExposure";
 import Programs from "../pages/Programs";
 import Products from "../pages/Products";
-import Kits from "../pages/Kits";
+// import Kits from "../pages/Kits";
 import Contact from "../pages/Contact";
 import LMS from "../pages/LMS";
 import SuccessStories from "../pages/SuccessStories";
-import Blogs from "../pages/Blogs";
+import Gallery from "../pages/Gallery";
 import Careers from "../pages/Careers";
 import FAQ from "../pages/FAQ";
 import AIProjects from "../pages/AIProjects";
@@ -26,10 +26,10 @@ export default function AppRoutes() {
       <Route path="/global-exposure" element={<GlobalExposure />} />
       <Route path="/programs" element={<Programs />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/kits" element={<Kits />} />
+      {/* <Route path="/kits" element={<Kits />} /> */}
       <Route path="/lms" element={<LMS />} />
       <Route path="/success-stories" element={<SuccessStories />} />
-      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/gallery" element={<Gallery />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/ai-projects" element={<AIProjects />} />

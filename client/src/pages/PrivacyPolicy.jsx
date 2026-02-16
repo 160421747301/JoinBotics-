@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
               Introduction
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to JoinBotics. We are committed to protecting your personal information and your right to privacy. 
+              Welcome to Join Botics. We are committed to protecting your personal information and your right to privacy. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit 
               our website or use our services.
             </p>
@@ -273,7 +273,7 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy or wish to exercise your privacy rights, please contact us:
             </p>
             <div className="space-y-2 text-gray-700">
-              <p><strong>JoinBotics</strong></p>
+              <p><strong>Join Botics</strong></p>
               <p>Email: <a href="mailto:connect@joinbotics.com" className="text-[#c11e38] hover:underline">connect@joinbotics.com</a></p>
               <p>Phone: <a href="tel:+919986780347" className="text-[#c11e38] hover:underline">+91 99867 80347</a></p>
               <p>Website: <a href="/contact" className="text-[#c11e38] hover:underline">Contact Form</a></p>

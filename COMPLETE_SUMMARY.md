@@ -2,7 +2,7 @@
 
 ## What You Now Have
 
-A **complete, production-ready email form submission system** for your JoinBotics website with:
+A **complete, production-ready email form submission system** for your Join Botics website with:
 
 ✅ Contact form → Email to team + confirmation to user  
 ✅ Career applications → Email to team + confirmation to applicant  
@@ -215,7 +215,7 @@ See `EMAIL_CONFIG_EXAMPLES.md` for all setup instructions.
 ## File Structure
 
 ```
-JoinBotics Project/
+Join Botics Project/
 ├── client/                              (React frontend)
 │   ├── src/pages/
 │   │   ├── Contact.jsx                 ✏️ Updated

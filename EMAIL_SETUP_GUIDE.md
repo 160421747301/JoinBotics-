@@ -1,7 +1,7 @@
 # Email Form Submission Setup Guide
 
 ## Overview
-Your JoinBotics website now has email functionality for both Contact and Career form submissions. Forms will send data to a Node.js/Express backend which then sends confirmation emails to both the user and your team.
+Your Join Botics website now has email functionality for both Contact and Career form submissions. Forms will send data to a Node.js/Express backend which then sends confirmation emails to both the user and your team.
 
 ## Architecture
 ```
@@ -13,7 +13,7 @@ Express Server (Node.js)
         ↓
 Nodemailer
         ↓
-User Email + JoinBotics Email
+User Email + Join Botics Email
 ```
 
 ## Setup Instructions

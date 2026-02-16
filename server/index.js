@@ -99,7 +99,7 @@ app.post("/api/contact", async (req, res) => {
       });
     }
 
-    // Email to JoinBotics (all configured emails)
+    // Email to Join Botics (all configured emails)
     const adminMailOptions = {
       from: process.env.EMAIL_FROM,
       to: recipientEmails,
@@ -121,15 +121,15 @@ app.post("/api/contact", async (req, res) => {
     const userMailOptions = {
       from: process.env.EMAIL_FROM,
       to: email,
-      subject: "We received your message - JoinBotics",
+      subject: "We received your message - Join Botics",
       html: `
-        <h2>Thank you for contacting JoinBotics!</h2>
+        <h2>Thank you for contacting Join Botics!</h2>
         <p>Hi ${escapeHtml(name)},</p>
         <p>We've received your message and will get back to you as soon as possible.</p>
         <p><strong>Your message:</strong></p>
         <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
         <hr>
-        <p>Best regards,<br>JoinBotics Team</p>
+        <p>Best regards,<br>Join Botics Team</p>
       `
     };
 
@@ -187,7 +187,7 @@ app.post("/api/careers", async (req, res) => {
       });
     }
 
-    // Email to JoinBotics (all configured emails)
+    // Email to Join Botics (all configured emails)
     const adminMailOptions = {
       from: process.env.EMAIL_FROM,
       to: recipientEmails,
@@ -210,14 +210,14 @@ app.post("/api/careers", async (req, res) => {
     const userMailOptions = {
       from: process.env.EMAIL_FROM,
       to: email,
-      subject: "Application Received - JoinBotics",
+      subject: "Application Received - Join Botics",
       html: `
         <h2>Thank you for applying!</h2>
         <p>Hi ${escapeHtml(name)},</p>
         <p>We've received your application for the position of <strong>${escapeHtml(position)}</strong>.</p>
         <p>Our team will review your application and get back to you within 3-5 business days.</p>
         <hr>
-        <p>Best regards,<br>JoinBotics Recruitment Team</p>
+        <p>Best regards,<br>Join Botics Recruitment Team</p>
       `
     };
 

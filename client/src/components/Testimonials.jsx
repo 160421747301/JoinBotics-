@@ -14,7 +14,7 @@ const TESTIMONIALS = [
   },
   {
     id: 2,
-    name: "Student Innovator",
+    name: "Mr. Aryan",
     role: "Student",
     school: "Bangalore International Academy, Jayanagar",
     quote: "At Join Botics, I don't just watch technology — I build it. Working on robotics and AI projects has helped me think like an engineer and turn ideas into working prototypes. Every session pushes me to explore more and innovate fearlessly.",
@@ -23,7 +23,7 @@ const TESTIMONIALS = [
   },
   {
     id: 3,
-    name: "Parent",
+    name: "Ms. Varsha",
     role: "Parent",
     school: "SVR Chinmaya School",
     quote: "Our students were able to design a fully functional Voting Booth Security System using sensors — something we never imagined they could build at this age. Join Botics made complex concepts simple, practical, and exciting, helping students connect technology with real world problems.",

@@ -49,6 +49,11 @@ body{
 	animation-delay: 1.5s;
 }
 
+/* Pause animation on hover */
+.animate-scroll:hover {
+	animation-play-state: paused;
+}
+
 /* Nav underline animation */
 .nav-underline {
 	position: relative;

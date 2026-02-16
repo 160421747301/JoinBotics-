@@ -4,7 +4,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    JoinBotics Website                            │
+│                    Join Botics Website                            │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌──────────────────────────────────────────────────────────┐   │
@@ -210,7 +210,7 @@
 │ Send Email #2 to Applicant               │
 │ To: jane@example.com                     │
 │ Subject: Application Received -          │
-│          JoinBotics                      │
+│          Join Botics                      │
 │ Content:                                 │
 │  - Thank you for applying                │
 │  - Position: STEM Trainer                │

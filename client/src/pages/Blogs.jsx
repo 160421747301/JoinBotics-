@@ -114,7 +114,7 @@ export default function Blogs() {
     {
       id: 5,
       category: "student-projects",
-      title: "12 Innovative Robotics Projects by JoinBotics Students",
+      title: "12 Innovative Robotics Projects by Join Botics Students",
       excerpt: "A showcase of the most creative and impactful robotics projects developed by our students in 2024.",
       author: "Innovation Team",
       date: "February 20, 2024",
@@ -155,7 +155,7 @@ export default function Blogs() {
     {
       id: 9,
       category: "edtech",
-      title: "JoinBotics LMS: Behind the Scenes",
+      title: "Join Botics LMS: Behind the Scenes",
       excerpt: "A sneak peek into the development of our upcoming Learning Management System and its innovative features.",
       author: "Product Team",
       date: "January 30, 2024",
@@ -226,7 +226,7 @@ export default function Blogs() {
               <span className="font-semibold">Insights & Resources</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              JoinBotics Blog
+              Join Botics Blog
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
               Explore the latest in STEM education, student innovations, and EdTech trends

@@ -21,14 +21,14 @@ export default function FAQ() {
     {
       id: 1,
       category: "general",
-      question: "Who can join JoinBotics programs?",
+      question: "Who can join Join Botics programs?",
       answer: "Our programs are designed for:\n\n• School Students: Grade 1-12 with age-appropriate content\n• College Students: Engineering, Diploma, B.Sc, BCA students\n• Educators and STEM Enthusiasts: Teachers and lifelong learners\n• Beginner to Advanced Levels: We cater to all skill levels, from absolute beginners to advanced learners\n\nEveryone from curious young minds to aspiring engineers can join our programs. No prior experience is required for our beginner courses!"
     },
     {
       id: 2,
       category: "general",
       question: "What are the prerequisites to start learning robotics?",
-      answer: "No prior coding or robotics knowledge is required!\n\n• Our beginner courses start from the very basics of logic building and block coding (Scratch, Blockly)\n• We gradually introduce Python and C as students progress\n• Concepts are taught through hands-on projects, making them easy to understand\n• Our trainers ensure every student grasps fundamentals before moving to advanced topics\n\nWhether you're 7 or 70, if you're curious and willing to learn, you're ready for JoinBotics!"
+      answer: "No prior coding or robotics knowledge is required!\n\n• Our beginner courses start from the very basics of logic building and block coding (Scratch, Blockly)\n• We gradually introduce Python and C as students progress\n• Concepts are taught through hands-on projects, making them easy to understand\n• Our trainers ensure every student grasps fundamentals before moving to advanced topics\n\nWhether you're 7 or 70, if you're curious and willing to learn, you're ready for Join Botics!"
     },
     {
       id: 3,
@@ -64,7 +64,7 @@ export default function FAQ() {
     {
       id: 8,
       category: "programs",
-      question: "How does JoinBotics partner with schools?",
+      question: "How does Join Botics partner with schools?",
       answer: "Yes! We actively partner with schools and institutions for:\n\n• Robotics & Innovation Lab Setup: Complete infrastructure with tools, kits, and software\n• STEM Clubs & Activity Centers: After-school programs and competitions\n• Faculty Training Programs: Upskilling teachers in robotics, coding, and AI\n• Curriculum Integration: NEP 2020-aligned STEAM content\n• ATL (Atal Tinkering Lab) Support: Complete lab implementation and management\n• Robotics/AI/Coding Lab Setup: Turnkey solutions from design to deployment\n\nWe work with 50+ schools across Maharashtra, Karnataka, Gujarat, and beyond. Contact us for customized partnership models!"
     },
     // Technical
@@ -133,7 +133,7 @@ export default function FAQ() {
               Frequently Asked Questions
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Find answers to common questions about JoinBotics programs, courses, and services
+              Find answers to common questions about Join Botics programs, courses, and services
             </p>
           </motion.div>
         </div>
@@ -303,10 +303,10 @@ export default function FAQ() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Programs", link: "/programs", icon: FaGraduationCap, color: "from-[#c11e38] to-[#220b34]" },
-              { title: "Products", link: "/kits", icon: FaTools, color: "from-[#c11e38] to-[#8a1532]" },
+              // { title: "Products", link: "/kits", icon: FaTools, color: "from-[#c11e38] to-[#8a1532]" },
               { title: "Success Stories", link: "/success-stories", icon: FaUsers, color: "from-[#8a1532] to-[#220b34]" },
               { title: "Blogs", link: "/blogs", icon: FaQuestionCircle, color: "from-orange-500 to-red-500" }
             ].map((item, index) => (

@@ -16,18 +16,12 @@ export default function CTA() {
             <p className="text-xl text-white/90">Empower your students with industry‑aligned STEM, Robotics & AI programs.</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div>
             <a 
               href="/contact" 
-              className="rounded-xl bg-white text-[#c11e38] px-8 py-4 font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105 whitespace-nowrap"
+              className="rounded-xl bg-white text-[#c11e38] px-8 py-4 font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105 whitespace-nowrap inline-block"
             >
               Partner with Us
-            </a>
-            <a 
-              href="/contact" 
-              className="rounded-xl border-2 border-white text-white px-8 py-4 font-bold text-lg hover:bg-white hover:text-[#c11e38] transition-all whitespace-nowrap"
-            >
-              Book a Demo
             </a>
           </div>
         </div>

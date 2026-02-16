@@ -1,4 +1,4 @@
-# JoinBotics Email Server
+# Join Botics Email Server
 
 Backend service for handling form submissions and sending emails.
 

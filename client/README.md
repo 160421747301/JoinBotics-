@@ -1,6 +1,6 @@
-# JoinBotics (client)
+# Join Botics (client)
 
-This is the front-end for the JoinBotics robotics school website built with React, Vite and TailwindCSS. It uses Framer Motion for UI animations and `react-hook-form` for the contact form.
+This is the front-end for the Join Botics robotics school website built with React, Vite and TailwindCSS. It uses Framer Motion for UI animations and `react-hook-form` for the contact form.
 
 Run locally:
 

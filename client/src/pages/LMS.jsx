@@ -32,10 +32,10 @@ export default function LMS() {
   };
 
   const UPCOMING_LMS = {
-    title: "JoinBotics LMS - Coming Soon",
+    title: "Join Botics LMS - Coming Soon",
     subtitle: "Techno Tamer's Lab",
     description: "Our proprietary Learning Management System designed specifically for STEAM education, combining cutting-edge technology with pedagogical excellence.",
-    vision: "To create an immersive, gamified learning environment where students don't just learn robotics and automation—they live it. The JoinBotics LMS will transform how students interact with STEAM concepts through virtual labs, AI-powered doubt solving, and personalized learning paths.",
+    vision: "To create an immersive, gamified learning environment where students don't just learn robotics and automation—they live it. The Join Botics LMS will transform how students interact with STEAM concepts through virtual labs, AI-powered doubt solving, and personalized learning paths.",
     features: [
       {
         icon: FaGraduationCap,

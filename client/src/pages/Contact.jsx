@@ -7,7 +7,7 @@ import { FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa"
 const OFFICES = [
   {
     city: "Bangalore",
-    address: "JoinBotics Technology Pvt Ltd, Karnataka",
+    address: "Join Botics Technology Pvt Ltd, Karnataka",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
@@ -21,7 +21,7 @@ const OFFICES = [
   },
   {
     city: "Hyderabad",
-    address: "JoinBotics Office, Telangana",
+    address: "Join Botics Office, Telangana",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
@@ -66,7 +66,7 @@ export default function Contact() {
   };
 
   const handleWhatsApp = () => {
-    const message = "Hi! I'm interested in learning more about JoinBotics programs.";
+    const message = "Hi! I'm interested in learning more about Join Botics programs.";
     window.open(`https://wa.me/919986780347?text=${encodeURIComponent(message)}`, "_blank");
   };
 
@@ -323,7 +323,7 @@ export default function Contact() {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            title="JoinBotics Locations"
+            title="Join Botics Locations"
             className="w-full"
           />
         </motion.div>

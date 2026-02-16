@@ -47,7 +47,7 @@ export default function Hero() {
               </a>
               <a
                 href="/assets/JoinBotics_Brochure.pdf"
-                download="JoinBotics_Brochure.pdf"
+                download="Join_Botics_Brochure.pdf"
                 className="inline-block rounded-xl px-6 py-3 bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white font-semibold shadow-lg hover:shadow-2xl hover:shadow-[#c11e38]/50 transition-all duration-300 hover:scale-105 hover:from-[#d42847] hover:to-[#2d0e42] relative overflow-hidden group"
               >
                 <span className="relative z-10">Download Brochure</span>

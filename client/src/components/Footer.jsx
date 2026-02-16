@@ -13,7 +13,7 @@ export default function Footer() {
                   <img 
                     src="/assets/joinbotics-logo.svg"
                     onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/assets/joinbotics-logo.png'; }}
-                    alt="JoinBotics" 
+                    alt="Join Botics" 
                     className="h-20 md:h-24 w-auto object-contain brightness-0 invert cursor-pointer"
                   />
                 </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
                     <a href="https://www.youtube.com/channel/UCTKhHUVWkKGhawTqEwMl5AA" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-white/10 hover:bg-[#FF0000] transition-colors text-white">
                       <FaYoutube size={16} />
                     </a>
-                    <a href="https://www.linkedin.com/company/joinbotics" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-white/10 hover:bg-[#0A66C2] transition-colors text-white">
+                    <a href="https://www.linkedin.com/company/join-botics/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-white/10 hover:bg-[#0A66C2] transition-colors text-white">
                       <FaLinkedinIn size={16} />
                     </a>
                   </div>
@@ -85,7 +85,7 @@ export default function Footer() {
                 <div>
                   <h4 className="text-slate-300 text-sm font-medium mb-4">Resources</h4>
                   <ul className="mt-4 space-y-3 text-slate-200 text-sm">
-                    <li><a className="hover:text-white transition-colors" href="/blogs">Blog</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/gallery">Gallery</a></li>
                     <li><a className="hover:text-white transition-colors" href="/success-stories">Success Stories</a></li>
                     <li><a className="hover:text-white transition-colors" href="/faq">FAQ</a></li>
                     <li><a className="hover:text-white transition-colors" href="/careers">Careers</a></li>
@@ -100,13 +100,8 @@ export default function Footer() {
           </div>
 
           <div className="px-8 pb-8 max-w-7xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl py-4 px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-slate-300 text-sm">© {new Date().getFullYear()} JoinBotics, Inc. All rights reserved.</div>
-              <div className="flex items-center gap-6">
-                <a className="text-slate-300 text-sm hover:text-white" href="/privacy-policy">Privacy Policy</a>
-                <a className="text-slate-300 text-sm hover:text-white" href="/terms-of-service">Terms of Service</a>
-                <a className="text-slate-300 text-sm hover:text-white" href="/contact">Report an Issue</a>
-              </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl py-4 px-6 flex flex-col md:flex-row items-center justify-center gap-4">
+              <div className="text-slate-300 text-sm">© {new Date().getFullYear()} Join Botics, Inc. All rights reserved.</div>
             </div>
           </div>
         </div>

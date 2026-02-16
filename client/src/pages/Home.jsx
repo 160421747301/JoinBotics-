@@ -13,10 +13,10 @@ export default function Home() {
       {/* Top Banner: Students + Robotics video, Tagline, CTAs */}
       <Hero />
 
-      {/* Why JoinBotics: Key features in icon/card layout */}
+      {/* Why Join Botics: Key features in icon/card layout */}
       <WhyJoin />
 
-      {/* Join the JoinBotics Movement */}
+      {/* Join the Join Botics Movement */}
       <Movement />
 
       {/* Impact Metrics: Stats on schools, students, projects, ATL success */}

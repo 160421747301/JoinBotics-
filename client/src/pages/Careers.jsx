@@ -277,10 +277,10 @@ export default function Careers() {
               <span className="font-semibold">Join Our Team</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Build Your Career at JoinBotics
+              Career Growth with Purpose
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Join a mission-driven team transforming STEAM education across India
+              Be part of a dynamic team creating meaningful impact in STEM and future‑skills education.
             </p>
           </motion.div>
         </div>
@@ -297,7 +297,7 @@ export default function Careers() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              The principles that guide everything we do at JoinBotics
+              The principles that guide everything we do at Join Botics
             </p>
           </motion.div>
 
@@ -723,12 +723,12 @@ export default function Careers() {
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Cover Letter / Why Join JoinBotics?</label>
+                  <label className="block text-gray-700 font-semibold mb-2">Cover Letter / Why Join Join Botics?</label>
                   <textarea
                     {...register("coverLetter")}
                     rows="5"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
-                    placeholder="Tell us about yourself and why you want to join JoinBotics..."
+                    placeholder="Tell us about yourself and why you want to join Join Botics..."
                   />
                 </div>
 

@@ -63,13 +63,13 @@ export default function Stats() {
     { 
       id: 3, 
       value: "500+", 
-      label: "Innovative Student Projects", 
+      label: "Innovative Projects", 
       desc: "From IoT systems to AI automations, students design and build impactful models that strengthen problem solving and creativity."
     },
     { 
       id: 4, 
       value: "4+", 
-      label: "Awards & Recognitions", 
+      label: "Recognitions", 
       desc: "National and international acknowledgements celebrating our contribution to STEM innovation and future skills education."
     },
   ];

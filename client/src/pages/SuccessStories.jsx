@@ -29,7 +29,7 @@ export default function SuccessStories() {
         }
       },
       after: {
-        transformation: "State-of-the-art STEAM lab with JoinBotics curriculum integration",
+        transformation: "State-of-the-art STEAM lab with Join Botics curriculum integration",
         achievements: [
           "Students won 15+ state and national level competitions",
           "100% participation in project-based learning activities",
@@ -43,7 +43,7 @@ export default function SuccessStories() {
         }
       },
       testimonial: {
-        quote: "JoinBotics has completely transformed our approach to education. Our students are now innovators, not just learners.",
+        quote: "Join Botics has completely transformed our approach to education. Our students are now innovators, not just learners.",
         author: "Principal, Gaikwad Global School",
         rating: 5
       },
@@ -96,7 +96,7 @@ export default function SuccessStories() {
         }
       },
       after: {
-        transformation: "Innovation hub with dedicated maker space and JoinBotics programs",
+        transformation: "Innovation hub with dedicated maker space and Join Botics programs",
         achievements: [
           "Students developed 12 patent-pending innovations",
           "Won Best Innovation School Award 2023",
@@ -110,7 +110,7 @@ export default function SuccessStories() {
         }
       },
       testimonial: {
-        quote: "Our partnership with JoinBotics didn't just add robotics classes—it created a culture of innovation that permeates everything we do.",
+        quote: "Our partnership with Join Botics didn't just add robotics classes—it created a culture of innovation that permeates everything we do.",
         author: "Director, Riverdale School",
         rating: 5
       },
@@ -232,7 +232,7 @@ export default function SuccessStories() {
               Transforming Education
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Real stories of schools and students achieving extraordinary results with JoinBotics
+              Real stories of schools and students achieving extraordinary results with Join Botics
             </p>
           </motion.div>
         </div>
@@ -360,7 +360,7 @@ export default function SuccessStories() {
               Before & After Transformations
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Discover how schools partnered with JoinBotics evolved from traditional learning to innovation powerhouses
+              Discover how schools partnered with Join Botics evolved from traditional learning to innovation powerhouses
             </p>
           </motion.div>
 
@@ -394,7 +394,7 @@ export default function SuccessStories() {
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-xl sm:text-2xl">📊</span>
                       </div>
-                      <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">Before JoinBotics</h4>
+                      <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">Before Join Botics</h4>
                     </div>
                     <p className="text-gray-700 mb-4">{story.before.situation}</p>
                     <div className="space-y-2">
@@ -414,7 +414,7 @@ export default function SuccessStories() {
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-xl sm:text-2xl">🚀</span>
                       </div>
-                      <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">After JoinBotics</h4>
+                      <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">After Join Botics</h4>
                     </div>
                     <p className="text-gray-700 mb-4">{story.after.transformation}</p>
                     <div className="space-y-2">
@@ -489,7 +489,7 @@ export default function SuccessStories() {
               Ready to Write Your Success Story?
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Join 50+ schools that have transformed their STEM education with JoinBotics
+              Join 50+ schools that have transformed their STEM education with Join Botics
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -1,4 +1,4 @@
-# 📧 JoinBotics Email System - Complete Documentation Index
+# 📧 Join Botics Email System - Complete Documentation Index
 
 Welcome! Your form submission email system is ready. Start here.
 
@@ -408,7 +408,7 @@ Let's get started!
 
 ---
 
-**Welcome to JoinBotics Email System!** 🎉
+**Welcome to Join Botics Email System!** 🎉
 
 Everything you need is here. Start with the Quick Start guide and you'll be sending emails in minutes.
 

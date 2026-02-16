@@ -4,36 +4,37 @@ import { FaCertificate, FaAward, FaCheckCircle, FaGraduationCap, FaUsers, FaStar
 
 const CERTIFICATION_BENEFITS = [
   {
-    icon: FaCheckCircle,
-    title: "Industry-Recognized Credentials",
-    desc: "Globally accepted certification that validates your STEM education expertise",
+    icon: FaGraduationCap,
+    title: "Industry‑Recognized Credentials",
+    desc: "Gain certifications valued by academic institutions and employers across the world.",
   },
   {
-    icon: FaGraduationCap,
+    icon: FaCheckCircle,
     title: "Quality Assurance",
-    desc: "Demonstrates adherence to international standards in robotics and AI education",
+    desc: "Demonstrates adherence to structured, validated, and internationally recognized certification frameworks.",
   },
   {
     icon: FaUsers,
-    title: "Enhanced Credibility",
-    desc: "Builds trust with students, parents, and educational institutions",
+    title: "Trusted Credibility",
+    desc: "Strengthens the confidence of students, parents, institutions, and industry partners.",
   },
   {
     icon: FaStar,
     title: "Continuous Support",
-    desc: "Access to ongoing training, resources, and curriculum updates",
+    desc: "Access ongoing curriculum updates, training resources, and certification enhancements.",
   },
 ];
 
 const CERTIFICATION_FEATURES = [
-  "Validated training methodology in Robotics, AI, and Coding",
-  "Curriculum aligned with international STEM standards",
-  "Regular quality audits and compliance checks",
-  "Access to AI Certs global network of educators",
-  "Certificate authentication and verification system",
-  "Professional development opportunities",
-  "Marketing and promotional materials support",
-  "Priority access to new programs and technologies",
+  "Delivery of role‑based AI & Blockchain certification programs",
+  "Validated training methodology in AI, ML, Prompt Engineering & Coding",
+  "Framework aligned with global AI learning standards",
+  "Regular quality audits & compliance checks",
+  "Access to AI CERTs® partner and educator network",
+  "Certificate authentication & verification system",
+  "Professional‑development pathways for learners & educators",
+  "Marketing and promotional support for outreach",
+  "Priority adoption of new certification tracks & emerging technologies",
 ];
 
 export default function Certifications() {
@@ -88,16 +89,20 @@ export default function Certifications() {
             <FaCertificate className="text-6xl mx-auto mb-6 text-white" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Authorized Training Partner</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-6">
-              Certified by AI Certs - Delivering World-Class STEM Education
+              Certified by AI CERTs® — Delivering Globally Recognized AI & Blockchain Certification Pathways
+            </p>
+            <p className="text-base text-white/80 max-w-3xl mx-auto mb-8">
+              Join Botics is proudly certified as an AI CERTs® Authorized Training Partner, enabling us to deliver industry‑recognized, role‑based AI and Blockchain certification programs designed for future‑ready learners.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4 mt-8">
               <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-3">
                 <p className="text-sm text-white/70">Certified By</p>
-                <p className="text-2xl font-bold text-white">AI Certs</p>
+                <p className="text-2xl font-bold text-white">AI CERTs®</p>
+                <p className="text-xs text-white/60 mt-1">A global certification provider offering role‑aligned programs across AI, Blockchain, and emerging technologies.</p>
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-3">
                 <p className="text-sm text-white/70">Training Focus</p>
-                <p className="text-2xl font-bold text-white">STEM Education</p>
+                <p className="text-lg font-bold text-white leading-tight">AI, Machine Learning, Blockchain, STEM‑Aligned Technology Education</p>
               </div>
             </div>
           </motion.div>
@@ -134,7 +139,10 @@ export default function Certifications() {
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Official Certification</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Proudly certified by AI Certs as an Authorized Training Partner
+              Join Botics is certified by AI CERTs® as an Authorized Training Partner
+            </p>
+            <p className="text-gray-500 max-w-3xl mx-auto mt-3 text-sm">
+              This partnership empowers us to deliver world\u2011class certification pathways aligned with industry demands and future\u2011skills development.
             </p>
           </motion.div>
 
@@ -196,7 +204,7 @@ export default function Certifications() {
                 <div className="relative overflow-hidden rounded-xl">
                   <img 
                     src="/assets/Joinbotics AICerts.jpg" 
-                    alt="AI Certs Authorized Training Partner Certificate - JoinBotics"
+                    alt="AI CERTs® Authorized Training Partner Certificate - Join Botics"
                     className="w-full h-auto object-contain"
                   />
                 </div>
@@ -206,7 +214,7 @@ export default function Certifications() {
         </div>
       </section>
 
-      {/* What is AI Certs */}
+      {/* What is AI CERTs® */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -215,10 +223,12 @@ export default function Certifications() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About AI Certs</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            AI Certs is a globally recognized certification body specializing in artificial intelligence, 
-            robotics, and technology education accreditation.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About AI CERTs®</h2>
+          <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            AI CERTs® is a globally recognized certification provider offering an extensive catalog of role\u2011based credentials across Artificial Intelligence, Blockchain, Bitcoin, AI Security, AI Cloud, AI Development, AI Data & Robotics, AI Business, Creative AI, Healthcare AI, and more.
+          </p>
+          <p className="text-gray-600 max-w-3xl mx-auto mt-4 leading-relaxed">
+            The programs are designed to build practical, job\u2011ready skills for learners, professionals, and institutions worldwide.
           </p>
         </motion.div>
 
@@ -235,8 +245,7 @@ export default function Certifications() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Global Recognition</h3>
                 <p className="text-gray-600">
-                  AI Certs certifications are recognized by educational institutions and industries worldwide, 
-                  ensuring credibility and trust.
+                  AI CERTs® certifications are trusted internationally by professionals, enterprises, and academic institutions, providing strong credibility and global relevance.
                 </p>
               </div>
             </div>
@@ -246,8 +255,7 @@ export default function Certifications() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Quality Standards</h3>
                 <p className="text-gray-600">
-                  Rigorous evaluation process ensuring training partners meet the highest standards 
-                  in curriculum delivery and student outcomes.
+                  Training partners undergo a rigorous evaluation and approval process, ensuring consistent delivery quality and learner outcomes.
                 </p>
               </div>
             </div>
@@ -257,8 +265,7 @@ export default function Certifications() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Continuous Excellence</h3>
                 <p className="text-gray-600">
-                  Regular audits and updates ensure programs remain cutting-edge and aligned 
-                  with evolving technology trends.
+                  Programs evolve continuously to stay aligned with rapid advancements in AI, ML, Blockchain, and emerging technologies.
                 </p>
               </div>
             </div>
@@ -312,8 +319,8 @@ export default function Certifications() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Certification Matters</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our AI Certs certification ensures you receive world-class education with measurable outcomes
+            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Our AI CERTs® Authorized Training Partner status ensures that every learner receives globally recognized certification pathways, measurable skill development, and direct alignment with industry expectations.
             </p>
           </motion.div>
 
@@ -350,7 +357,7 @@ export default function Certifications() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Certification Includes</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Comprehensive certification covering all aspects of quality STEM education delivery
+            A complete enablement package aligned with AI CERTs® global certification ecosystem:
           </p>
         </motion.div>
 
@@ -391,7 +398,7 @@ export default function Certifications() {
               Train with a Certified Partner
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Experience the difference that AI Certs certified education makes in your learning journey
+              Experience globally recognized AI and Blockchain certification programs delivered through Join Botics \u2014 your trusted AI CERTs\u00ae Authorized Partner.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a

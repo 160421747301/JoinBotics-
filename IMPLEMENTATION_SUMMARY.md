@@ -21,7 +21,7 @@
 - ✅ Added form validation on frontend
 
 ### Email Features
-- ✅ Automatic email to JoinBotics team with all submission details
+- ✅ Automatic email to Join Botics team with all submission details
 - ✅ Automatic confirmation email to user
 - ✅ HTML formatted emails with styling
 - ✅ Secure HTML escaping (XSS prevention)
@@ -38,7 +38,7 @@
 ## File Structure
 
 ```
-JoinBotics Project/
+Join Botics Project/
 ├── client/
 │   ├── src/
 │   │   ├── pages/
@@ -401,7 +401,7 @@ When deploying to production:
 
 ## Summary
 
-Your JoinBotics website now has **complete email functionality** for form submissions:
+Your Join Botics website now has **complete email functionality** for form submissions:
 - ✅ Contact forms send emails
 - ✅ Career applications send emails
 - ✅ Users get confirmation emails
