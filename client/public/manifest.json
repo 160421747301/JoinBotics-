@@ -1,5 +1,5 @@
 {
-  "name": "Join Botics",
+  "name": "Join Botics | Future-Ready Learning",
   "short_name": "JoinBotics",
   "description": "Empowering the Future with Robotics, Automation & STEAM Education",
   "start_url": "/",
@@ -8,14 +8,16 @@
   "theme_color": "#c11e38",
   "icons": [
     {
-      "src": "/assets/logo-color.png",
+      "src": "/assets/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      "src": "/assets/logo-color.png",
+      "src": "/assets/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable any"
     }
   ]
 }
