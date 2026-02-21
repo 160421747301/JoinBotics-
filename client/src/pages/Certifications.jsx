@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import Footer from "../components/Footer";
-import { FaCertificate, FaAward, FaCheckCircle, FaGraduationCap, FaUsers, FaStar, FaHandshake } from "react-icons/fa";
+import { FaCertificate, FaAward, FaCheckCircle, FaGraduationCap, FaUsers, FaStar, FaHandshake, FaBriefcase, FaShieldAlt, FaCloud, FaCode, FaLightbulb, FaDatabase, FaChalkboardTeacher, FaPalette, FaBitcoin, FaChevronDown } from "react-icons/fa";
 
 const CERTIFICATION_BENEFITS = [
   {
@@ -26,18 +27,154 @@ const CERTIFICATION_BENEFITS = [
 ];
 
 const CERTIFICATION_FEATURES = [
-  "Delivery of role‑based AI & Blockchain certification programs",
+  "Delivery of role-based AI & Blockchain certification programs",
   "Validated training methodology in AI, ML, Prompt Engineering & Coding",
   "Framework aligned with global AI learning standards",
   "Regular quality audits & compliance checks",
-  "Access to AI CERTs® partner and educator network",
   "Certificate authentication & verification system",
-  "Professional‑development pathways for learners & educators",
+  "Professional-development pathways for learners & educators",
   "Marketing and promotional support for outreach",
   "Priority adoption of new certification tracks & emerging technologies",
 ];
 
+const COURSE_CATEGORIES = [
+  {
+    id: "essentials",
+    title: "AI Essentials Certifications",
+    icon: FaGraduationCap,
+    description: "Foundational AI certifications for beginners and executives",
+    courses: [
+      "AI+ Foundation™",
+      "AI+ Executive™",
+      "AI+ Prompt Engineer Level 1™",
+      "AI+ Everyone™",
+    ],
+  },
+  {
+    id: "business",
+    title: "AI Business Certifications",
+    icon: FaBriefcase,
+    description: "Role-based AI certifications for business professionals",
+    courses: [
+      "AI+ Chief AI Officer™",
+      "AI+ Supply Chain™",
+      "AI+ Ethics™",
+      "AI+ Project Manager™",
+      "AI+ Marketing™",
+      "AI+ Sales™",
+      "AI+ Customer Service™",
+      "AI+ Writer™",
+      "AI+ Product Manager™",
+      "AI+ Human Resources™",
+      "AI+ Finance™",
+      "AI+ Legal™",
+      "AI+ Researcher™",
+      "AI+ Real Estate™",
+    ],
+  },
+  {
+    id: "security",
+    title: "AI Security Certifications",
+    icon: FaShieldAlt,
+    description: "Advanced security and compliance certifications",
+    courses: [
+      "AI+ Security Level 1™",
+      "AI+ Security Level 2™",
+      "AI+ Security Level 3™",
+      "AI+ Security Compliance™",
+      "AI+ Network™",
+      "AI+ Ethical Hacker™",
+    ],
+  },
+  {
+    id: "cloud",
+    title: "AI Cloud",
+    icon: FaCloud,
+    description: "Cloud-based AI architecture and implementation",
+    courses: [
+      "AI+ Cloud™",
+      "AI+ Architect™",
+    ],
+  },
+  {
+    id: "development",
+    title: "AI Development",
+    icon: FaCode,
+    description: "Technical AI development and engineering certifications",
+    courses: [
+      "AI+ Prompt Engineer Level 2™",
+      "AI+ Developer™",
+      "AI+ Engineer™",
+      "AI+ Vibe Coder™",
+    ],
+  },
+  {
+    id: "specialization",
+    title: "AI Specialization",
+    icon: FaLightbulb,
+    description: "Industry-specific AI applications",
+    courses: [
+      "AI+ Government™",
+      "AI+ Healthcare™",
+      "AI+ Policy Maker™",
+      "AI+ Doctor™",
+      "AI+ Nurse",
+    ],
+  },
+  {
+    id: "data-robotics",
+    title: "AI Data & Robotics",
+    icon: FaDatabase,
+    description: "Data science, robotics, and quantum computing",
+    courses: [
+      "AI+ Data™",
+      "AI+ Robotics™",
+      "AI+ Quantum™",
+      "AI+ Business Intelligence™",
+    ],
+  },
+  {
+    id: "education",
+    title: "AI Learning & Education",
+    icon: FaChalkboardTeacher,
+    description: "AI certifications for educators and trainers",
+    courses: [
+      "AI+ Educator™",
+      "AI+ Learning & Development™",
+    ],
+  },
+  {
+    id: "design",
+    title: "AI Design and Creative",
+    icon: FaPalette,
+    description: "Creative and design-focused AI applications",
+    courses: [
+      "AI+ UX Designer™",
+      "AI+ Design™",
+    ],
+  },
+  {
+    id: "blockchain",
+    title: "Blockchain and Bitcoin",
+    icon: FaBitcoin,
+    description: "Blockchain technology and cryptocurrency certifications",
+    courses: [
+      "Bitcoin+ Everyone™",
+      "Bitcoin+ Executive™",
+      "Bitcoin+ Developer™",
+      "Blockchain+ Developer™",
+      "Blockchain+ Executive™",
+      "Bitcoin+ Security™",
+    ],
+  },
+];
+
 export default function Certifications() {
+  const [expandedCategory, setExpandedCategory] = useState(null);
+
+  const toggleCategory = (categoryId) => {
+    setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
+  };
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
       {/* Custom CSS Animations */}
@@ -91,20 +228,6 @@ export default function Certifications() {
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-6">
               Certified by AI CERTs® — Delivering Globally Recognized AI & Blockchain Certification Pathways
             </p>
-            <p className="text-base text-white/80 max-w-3xl mx-auto mb-8">
-              Join Botics is proudly certified as an AI CERTs® Authorized Training Partner, enabling us to deliver industry‑recognized, role‑based AI and Blockchain certification programs designed for future‑ready learners.
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-4 mt-8">
-              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-3">
-                <p className="text-sm text-white/70">Certified By</p>
-                <p className="text-2xl font-bold text-white">AI CERTs®</p>
-                <p className="text-xs text-white/60 mt-1">A global certification provider offering role‑aligned programs across AI, Blockchain, and emerging technologies.</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-3">
-                <p className="text-sm text-white/70">Training Focus</p>
-                <p className="text-lg font-bold text-white leading-tight">AI, Machine Learning, Blockchain, STEM‑Aligned Technology Education</p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -142,7 +265,7 @@ export default function Certifications() {
               Join Botics is certified by AI CERTs® as an Authorized Training Partner
             </p>
             <p className="text-gray-500 max-w-3xl mx-auto mt-3 text-sm">
-              This partnership empowers us to deliver world\u2011class certification pathways aligned with industry demands and future\u2011skills development.
+              This partnership empowers us to deliver world-class certification pathways aligned with industry demands and future-skills development.
             </p>
           </motion.div>
 
@@ -225,10 +348,10 @@ export default function Certifications() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About AI CERTs®</h2>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            AI CERTs® is a globally recognized certification provider offering an extensive catalog of role\u2011based credentials across Artificial Intelligence, Blockchain, Bitcoin, AI Security, AI Cloud, AI Development, AI Data & Robotics, AI Business, Creative AI, Healthcare AI, and more.
+            AI CERTs® is a globally recognized certification provider offering an extensive catalog of role-based credentials across Artificial Intelligence, Blockchain, Bitcoin, AI Security, AI Cloud, AI Development, AI Data & Robotics, AI Business, Creative AI, Healthcare AI, and more.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mt-4 leading-relaxed">
-            The programs are designed to build practical, job\u2011ready skills for learners, professionals, and institutions worldwide.
+            The programs are designed to build practical, job-ready skills for learners, professionals, and institutions worldwide.
           </p>
         </motion.div>
 
@@ -384,6 +507,131 @@ export default function Certifications() {
         </motion.div>
       </section>
 
+      {/* AI CERTs® Course Catalog */}
+      <section className="bg-gradient-to-b from-white via-gray-50 to-white py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#c11e38]/10 to-[#220b34]/10 rounded-full mb-4">
+              <span className="text-[#c11e38] font-semibold text-sm">COMPREHENSIVE CATALOG</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#c11e38] to-[#220b34] bg-clip-text text-transparent">
+              AI CERTs® Certification Programs
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Explore our extensive range of industry-leading AI and Blockchain certifications — designed for every role, skill level, and career aspiration.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto items-start">
+            {COURSE_CATEGORIES.map((category, index) => {
+              const Icon = category.icon;
+              const isExpanded = expandedCategory === category.id;
+              
+              return (
+                <motion.div
+                  key={category.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#c11e38]/30 overflow-hidden h-fit"
+                >
+                  {/* Category Header */}
+                  <div 
+                    onClick={() => toggleCategory(category.id)}
+                    className="p-6 bg-gradient-to-r from-[#c11e38]/5 to-[#220b34]/5 hover:from-[#c11e38]/10 hover:to-[#220b34]/10 transition-all cursor-pointer"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start gap-4 flex-1">
+                        <div className="p-3 bg-gradient-to-br from-[#c11e38] to-[#220b34] rounded-xl shadow-lg flex-shrink-0">
+                          <Icon className="text-2xl text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-bold text-gray-900 mb-2">
+                            {category.title}
+                          </h3>
+                          <p className="text-gray-600 text-sm mb-3">
+                            {category.description}
+                          </p>
+                          <div className="inline-block px-3 py-1 bg-white rounded-full border border-gray-200 shadow-sm">
+                            <span className="text-xs font-semibold text-gray-700">
+                              {category.courses.length} Certification{category.courses.length > 1 ? 's' : ''}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={`p-2 rounded-full bg-white shadow-md transition-transform duration-300 flex-shrink-0 ${isExpanded ? 'rotate-180' : ''}`}>
+                        <FaChevronDown className="text-lg text-[#c11e38]" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Expandable Course Grid */}
+                  {isExpanded && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <div className="p-6 pt-4 bg-gray-50/50">
+                        <div className="grid grid-cols-2 gap-3">
+                          {category.courses.map((course, idx) => (
+                            <motion.div
+                              key={idx}
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ duration: 0.2, delay: idx * 0.03 }}
+                              className="flex items-start gap-2 p-3 bg-white rounded-lg border border-gray-100 hover:border-[#c11e38]/30 hover:shadow-md transition-all"
+                            >
+                              <FaCheckCircle className="text-[#c11e38] text-sm mt-0.5 flex-shrink-0" />
+                              <span className="font-medium text-gray-800 text-sm leading-snug">
+                                {course}
+                              </span>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </motion.div>
+              );
+            })}
+          </div>
+
+          {/* Stats Bar */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-16 bg-gradient-to-r from-[#c11e38] to-[#220b34] rounded-2xl p-8 shadow-2xl"
+          >
+            <div className="grid md:grid-cols-3 gap-8 text-center text-white">
+              <div>
+                <div className="text-5xl font-bold mb-2">65+</div>
+                <div className="text-white/80 text-sm uppercase tracking-wide">Total Certifications</div>
+              </div>
+              <div>
+                <div className="text-5xl font-bold mb-2">10</div>
+                <div className="text-white/80 text-sm uppercase tracking-wide">Specialization Categories</div>
+              </div>
+              <div>
+                <div className="text-5xl font-bold mb-2">100%</div>
+                <div className="text-white/80 text-sm uppercase tracking-wide">Industry Recognized</div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white py-16">
         <div className="mx-auto max-w-4xl px-6 text-center">
@@ -398,7 +646,7 @@ export default function Certifications() {
               Train with a Certified Partner
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Experience globally recognized AI and Blockchain certification programs delivered through Join Botics \u2014 your trusted AI CERTs\u00ae Authorized Partner.
+              Experience globally recognized AI and Blockchain certification programs delivered through Join Botics — your trusted AI CERTs® Authorized Partner.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
