@@ -18,7 +18,7 @@ export default function Footer() {
                   />
                 </Link>
                 <p className="mt-4 text-slate-300 max-w-xs leading-relaxed">
-                  Empowering the next generation with hands-on STEAM education in Robotics, AI, Coding, and Innovation.
+                  Driving transformative learning experiences across Robotics, AI, Coding, STEM, and innovation‑led skill development.
                 </p>
 
                 {/* Contact Info */}
@@ -61,7 +61,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6 md:mt-28">
                 <div>
                   <h4 className="text-slate-300 text-sm font-medium mb-4">Quick Links</h4>
                   <ul className="mt-4 space-y-3 text-slate-200 text-sm">
