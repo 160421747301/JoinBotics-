@@ -1,132 +1,167 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import { FaImage, FaVideo, FaPlay, FaExpand, FaTimes } from "react-icons/fa";
+import { FaImage, FaVideo, FaExpand, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 const GALLERY_IMAGES = [
   {
     id: 1,
-    title: "Robotics Workshop at Gaikwad Global School",
-    description: "Students learning robotics fundamentals with Arduino kits",
-    category: "workshops",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    title: "Join Botics Gallery - 1",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/1.jpeg",
   },
   {
     id: 2,
-    title: "AI/ML Project Showcase",
-    description: "Students presenting their machine learning projects",
-    category: "projects",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+    title: "Join Botics Gallery - 2",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/2.jpeg",
   },
   {
     id: 3,
-    title: "Drone Assembly Session",
-    description: "Hands-on drone building and flight training",
-    category: "workshops",
-    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80",
+    title: "Join Botics Gallery - 3",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/3.jpeg",
   },
   {
     id: 4,
-    title: "3D Printing Lab",
-    description: "Students designing and printing 3D models",
-    category: "labs",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+    title: "Join Botics Gallery - 4",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/4.jpeg",
   },
   {
     id: 5,
-    title: "Coding Competition Winners",
-    description: "Annual coding championship celebration",
-    category: "events",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+    title: "Join Botics Gallery - 5",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/5.jpeg",
   },
   {
     id: 6,
-    title: "IoT Smart Home Project",
-    description: "Student-built IoT automation system",
-    category: "projects",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    title: "Join Botics Gallery - 6",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/6.jpeg",
   },
   {
     id: 7,
-    title: "VR Experience Session",
-    description: "Immersive virtual reality learning experience",
-    category: "workshops",
-    image: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?w=800&q=80",
+    title: "Join Botics Gallery - 7",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/7.jpeg",
   },
   {
     id: 8,
-    title: "Robot Competition",
-    description: "Inter-school robotics championship",
-    category: "events",
-    image: "https://images.unsplash.com/photo-1563799520-b15ff9654772?w=800&q=80",
+    title: "Join Botics Gallery - 8",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/8.jpeg",
+  },
+  {
+    id: 9,
+    title: "Join Botics Gallery - 9",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/9.jpeg",
+  },
+  {
+    id: 10,
+    title: "Join Botics Gallery - 10",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/10.jpeg",
+  },
+  {
+    id: 11,
+    title: "Join Botics Gallery - 11",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/11.jpeg",
+  },
+  {
+    id: 12,
+    title: "Join Botics Gallery - 12",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/12.jpg",
+  },
+  {
+    id: 13,
+    title: "Join Botics Gallery - 13",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/13.jpg",
+  },
+  {
+    id: 14,
+    title: "Join Botics Gallery - 14",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/14.jpeg",
+  },
+  {
+    id: 15,
+    title: "Join Botics Gallery - 15",
+    description: "Highlights from our STEM education programs and activities",
+    category: "all",
+    image: "/assets/Gallery Images JB/15.jpeg",
   },
 ];
 
 const VIDEOS = [
   {
     id: 1,
-    title: "Introduction to Join Botics Programs",
-    description: "Overview of our comprehensive STEM education programs",
-    thumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
-    duration: "3:45",
-    category: "overview",
+    title: "Join Botics Video 1",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "5YH3E8jHQyw",
+    category: "all",
   },
   {
     id: 2,
-    title: "Student Success Stories",
-    description: "Hear from students who transformed through Join Botics",
-    thumbnail: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
-    duration: "5:20",
-    category: "testimonials",
+    title: "Join Botics Video 2",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "s5HHZ-_jHKg",
+    category: "all",
   },
   {
     id: 3,
-    title: "Robotics Workshop Highlights",
-    description: "Behind the scenes of our hands-on robotics sessions",
-    thumbnail: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
-    duration: "4:15",
-    category: "workshops",
+    title: "Join Botics Video 3",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "nNCsgsVXrr4",
+    category: "all",
   },
   {
     id: 4,
-    title: "AI Project Demonstrations",
-    description: "Students showcasing their AI/ML projects",
-    thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
-    duration: "6:30",
-    category: "projects",
+    title: "Join Botics Video 4",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "LOtN-oVDsj8",
+    category: "all",
   },
   {
     id: 5,
-    title: "Drone Flight Training",
-    description: "Learn how we teach drone assembly and flight",
-    thumbnail: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80",
-    duration: "4:50",
-    category: "workshops",
+    title: "Join Botics Video 5",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "d_tg1bfkCXI",
+    category: "all",
   },
   {
     id: 6,
-    title: "School Partnership Program",
-    description: "How schools benefit from partnering with Join Botics",
-    thumbnail: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?w=800&q=80",
-    duration: "3:30",
-    category: "overview",
+    title: "Join Botics Video 6",
+    description: "Highlights from Join Botics STEM programs and activities",
+    youtubeId: "QxaD0CBkwGU",
+    category: "all",
   },
 ];
 
 const CATEGORIES = [
-  { id: "all", name: "All" },
-  { id: "workshops", name: "Workshops" },
-  { id: "projects", name: "Projects" },
-  { id: "events", name: "Events" },
-  { id: "labs", name: "Labs" },
+  { id: "all", name: "All Gallery Images" },
 ];
 
 const VIDEO_CATEGORIES = [
-  { id: "all", name: "All" },
-  { id: "overview", name: "Overview" },
-  { id: "testimonials", name: "Testimonials" },
-  { id: "workshops", name: "Workshops" },
-  { id: "projects", name: "Projects" },
+  { id: "all", name: "All Videos" },
 ];
 
 export default function Gallery() {
@@ -148,7 +183,7 @@ export default function Gallery() {
       <section className="relative text-white pt-32 pb-20 min-h-[78vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1492681290082-e932832941e6?w=1920&q=80" 
+            src="/assets/Gallery Images JB/1.jpeg" 
             alt="Gallery Background"
             className="w-full h-full object-cover"
           />
@@ -265,25 +300,16 @@ export default function Gallery() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all cursor-pointer bg-white"
+                className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white"
               >
-                <div className="aspect-video overflow-hidden relative">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all flex items-center justify-center">
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      className="bg-[#c11e38] rounded-full p-6 shadow-2xl"
-                    >
-                      <FaPlay className="text-white text-3xl ml-1" />
-                    </motion.div>
-                  </div>
-                  <div className="absolute bottom-3 right-3 bg-black/80 text-white text-xs px-2 py-1 rounded">
-                    {video.duration}
-                  </div>
+                <div className="aspect-video overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-gray-900 text-lg mb-2">{video.title}</h3>
