@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import { FaAward, FaCheckCircle, FaHandshake, FaLightbulb } from "react-icons/fa";
+import { FaAward, FaCheckCircle, FaHandshake, FaLightbulb, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const TIMELINE = [
   { year: "2018", milestone: "Founded Join Botics and launched our first Techno Tamers Lab, marking the beginning of our STEM innovation journey." },
@@ -68,6 +69,77 @@ const RECOGNITIONS = [
 ];
 
 export default function About() {
+  const [centeredIndex, setCenteredIndex] = useState(-1);
+
+  const PARTNER_SCHOOLS = [
+    { name: 'Alpine Public School', logo: '/assets/JB Clients Logos/Alpine.png' },
+    { name: 'Ashoka High School', logo: '/assets/JB Clients Logos/ashoka-hall-school.jpg' },
+    { name: 'Arise International School', logo: '/assets/JB Clients Logos/Arise School.png' },
+    { name: 'Bangalore International Academy', logo: '/assets/JB Clients Logos/bangalore-international-academy- Combined.png' },
+    { name: 'Bangalore International Public School', logo: '/assets/JB Clients Logos/BIPS.png' },
+    { name: 'Bangalore International Kids High', logo: '/assets/JB Clients Logos/kids high School.png' },
+    { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
+    { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
+    { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
+    { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
+    { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
+    { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
+    { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = document.getElementById('partner-scroll-container');
+      if (!container) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const containerCenter = containerRect.left + containerRect.width / 2;
+      const items = container.querySelectorAll('[data-logo-index]');
+      
+      let closestIndex = -1;
+      let closestDistance = Infinity;
+
+      items.forEach((item) => {
+        const itemRect = item.getBoundingClientRect();
+        const itemCenter = itemRect.left + itemRect.width / 2;
+        const distance = Math.abs(containerCenter - itemCenter);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = parseInt(item.getAttribute('data-logo-index'));
+        }
+      });
+
+      setCenteredIndex(closestIndex);
+    };
+
+    const container = document.getElementById('partner-scroll-container');
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial check
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
+  const scrollLeft = () => {
+    const container = document.getElementById('partner-scroll-container');
+    if (container) {
+      container.scrollBy({ left: -288, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    const container = document.getElementById('partner-scroll-container');
+    if (container) {
+      container.scrollBy({ left: 288, behavior: 'smooth' });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
       {/* Hero Section */}
@@ -385,46 +457,42 @@ export default function About() {
             </p>
             
             {/* Infinite Scrolling Logos */}
-            <div className="relative overflow-hidden py-4">
+            <div className="relative overflow-hidden py-4 max-w-[900px] mx-auto">
               {/* Gradient overlays for fade effect */}
-              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
               
-              <div className="flex animate-scroll hover:pause">
+              {/* Left Arrow */}
+              <button
+                onClick={scrollLeft}
+                className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#c11e38] group"
+                aria-label="Scroll left"
+              >
+                <FaChevronLeft className="text-gray-600 group-hover:text-[#c11e38] text-xl" />
+              </button>
+              
+              {/* Right Arrow */}
+              <button
+                onClick={scrollRight}
+                className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#c11e38] group"
+                aria-label="Scroll right"
+              >
+                <FaChevronRight className="text-gray-600 group-hover:text-[#c11e38] text-xl" />
+              </button>
+              
+              <div 
+                id="partner-scroll-container"
+                className="flex overflow-x-auto scrollbar-hide"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              >
                 {/* First set of logos */}
-                {[
-                  { name: 'Alpine Public School', logo: '/assets/JB Clients Logos/Alpine.png' },
-                  { name: 'Ashoka High School', logo: '/assets/JB Clients Logos/ashoka-hall-school.jpg' },
-                  { name: 'Arise International School', logo: '/assets/JB Clients Logos/Arise School.png' },
-                  { name: 'Bangalore International Academy', logo: '/assets/JB Clients Logos/bangalore-international-academy- Combined.png' },
-                  { name: 'Bangalore International Public School', logo: '/assets/JB Clients Logos/BIPS.png' },
-                  { name: 'Bangalore International Kids High', logo: '/assets/JB Clients Logos/kids high School.png' },
-                  { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
-                  { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
-                  { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
-                  { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
-                  { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
-                  { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
-                  { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
-                ].concat([
-                  /* Duplicate set for seamless loop */
-                  { name: 'Alpine Public School', logo: '/assets/JB Clients Logos/Alpine.png' },
-                  { name: 'Ashoka High School', logo: '/assets/JB Clients Logos/ashoka-hall-school.jpg' },
-                  { name: 'Arise International School', logo: '/assets/JB Clients Logos/Arise School.png' },
-                  { name: 'Bangalore International Academy', logo: '/assets/JB Clients Logos/bangalore-international-academy- Combined.png' },
-                  { name: 'Bangalore International Public School', logo: '/assets/JB Clients Logos/BIPS.png' },
-                  { name: 'Bangalore International Kids High', logo: '/assets/JB Clients Logos/kids high School.png' },
-                  { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
-                  { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
-                  { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
-                  { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
-                  { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
-                  { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
-                  { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
-                ]).map((partner, idx) => (
+                {PARTNER_SCHOOLS.concat(PARTNER_SCHOOLS).map((partner, idx) => (
                   <div
                     key={idx}
-                    className="group relative flex-shrink-0 mx-4 w-64"
+                    data-logo-index={idx}
+                    className={`group relative flex-shrink-0 mx-4 w-64 transition-transform duration-500 ${
+                      centeredIndex === idx ? 'scale-110' : 'scale-100'
+                    }`}
                   >
                     <div className="bg-white rounded-2xl p-5 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#c11e38]/30">
                       {/* Logo Container */}

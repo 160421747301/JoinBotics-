@@ -114,3 +114,12 @@ body{
 .demo-btn:hover::after {
 	left: 120%;
 }
+
+/* Hide scrollbar for partner slider */
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}

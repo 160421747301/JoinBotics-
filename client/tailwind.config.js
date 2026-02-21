@@ -22,6 +22,7 @@ export default {
       animation: {
         shimmer: 'shimmer 3s ease-in-out infinite',
         scroll: 'scroll 40s linear infinite',
+        'scroll-mobile': 'scroll 20s linear infinite',
       },
     },
   },
