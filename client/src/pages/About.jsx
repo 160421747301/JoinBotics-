@@ -5,7 +5,7 @@ import { FaAward, FaCheckCircle, FaHandshake, FaLightbulb } from "react-icons/fa
 const TIMELINE = [
   { year: "2018", milestone: "Founded Join Botics and launched our first Techno Tamers Lab, marking the beginning of our STEM innovation journey." },
   { year: "2019", milestone: "Pioneered Bengaluru's first 3D Printing Labs exclusively for school students, giving young learners early exposure to cutting‑edge technology." },
-  { year: "2020", milestone: "Formed our first major partnerships with 10 schools, expanding STEAM learning across institutions." },
+  { year: "2020", milestone: "Formed our first major partnerships with 10 schools, expanding STEM learning across institutions." },
   { year: "2021", milestone: "Introduced structured Coding Programs to strengthen digital literacy and foundational programming skills." },
   { year: "2022", milestone: "Established dedicated AI Labs to bring future‑ready learning directly into classrooms." },
   { year: "2023", milestone: "Expanded our reach through partnerships with 25 schools, accelerating impact across multiple regions." },
@@ -110,24 +110,9 @@ export default function About() {
               <FaLightbulb className="text-4xl text-yellow-500" />
               <h2 className="text-3xl font-bold">Our Vision</h2>
             </div>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-yellow-500 mt-1 flex-shrink-0" />
-                <span>Future‑ready STEM & AI access for all learners</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-yellow-500 mt-1 flex-shrink-0" />
-                <span>NEP 2020‑aligned innovation‑driven learning</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-yellow-500 mt-1 flex-shrink-0" />
-                <span>Confident creators solving real problems</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-yellow-500 mt-1 flex-shrink-0" />
-                <span>Practical, inclusive, measurable education impact</span>
-              </li>
-            </ul>
+            <p className="text-gray-700 leading-relaxed">
+              Join Botics envisions a future where all learners gain access to future‑ready STEM and AI education through NEP‑aligned, innovation‑driven learning that empowers confident creators to solve real‑world problems and demonstrate their skills through meaningful, industry‑relevant achievements.
+            </p>
           </motion.div>
 
           <motion.div
@@ -141,24 +126,9 @@ export default function About() {
               <FaCheckCircle className="text-4xl text-[#c11e38]" />
               <h2 className="text-3xl font-bold">Our Mission</h2>
             </div>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-[#c11e38] mt-1 flex-shrink-0" />
-                <span>Hands‑on STEM programs built around projects</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-[#c11e38] mt-1 flex-shrink-0" />
-                <span>NEP 2020‑aligned curriculum + labs + training</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-[#c11e38] mt-1 flex-shrink-0" />
-                <span>Outcomes validated through portfolios + certifications</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheckCircle className="text-[#c11e38] mt-1 flex-shrink-0" />
-                <span>Scalable implementation with long‑term support</span>
-              </li>
-            </ul>
+            <p className="text-gray-700 leading-relaxed">
+              Join Botics delivers hands‑on, project‑based STEM and AI programs built on NEP‑aligned curriculum, labs, and training, ensuring measurable learning outcomes through authentic portfolios and industry‑relevant certifications while enabling scalable, long‑term implementation for schools and learning communities.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -423,34 +393,34 @@ export default function About() {
               <div className="flex animate-scroll hover:pause">
                 {/* First set of logos */}
                 {[
-                  { name: 'Alpine Public School', logo: '/assets/Alpine Public School.jpg' },
-                  { name: 'Ashoka High School', logo: '/assets/Ashoka High School.jpg' },
-                  { name: 'Arise International School', logo: '/assets/Arise International School.jpg' },
-                  { name: 'Bangalore International Academy', logo: '/assets/Bangalore International Academy.jpg' },
-                  { name: 'Bangalore International Public School', logo: '/assets/Bangalore International Public School.jpg' },
-                  { name: 'Bangalore International Kids High', logo: '/assets/Bangalore International Kids High.jpg' },
-                  { name: 'Bhavan Bangalore Press School', logo: '/assets/Bhavan Bangalore Press School.jpg' },
-                  { name: 'Billabong High International School', logo: '/assets/Billabong High International School.jpg' },
-                  { name: 'Riverdale High School', logo: '/assets/Riverdale High School.jpg' },
-                  { name: 'Gaikwad Global School', logo: '/assets/Gaikwad Global School.jpg' },
-                  { name: 'SEA International School', logo: '/assets/SEA International School.jpg' },
-                  { name: 'SM English School', logo: '/assets/SM English School.jpg' },
-                  { name: 'SVR Chinmaya School', logo: '/assets/SVR Chinmaya School.jpg' },
+                  { name: 'Alpine Public School', logo: '/assets/JB Clients Logos/Alpine.png' },
+                  { name: 'Ashoka High School', logo: '/assets/JB Clients Logos/ashoka-hall-school.jpg' },
+                  { name: 'Arise International School', logo: '/assets/JB Clients Logos/Arise School.png' },
+                  { name: 'Bangalore International Academy', logo: '/assets/JB Clients Logos/bangalore-international-academy- Combined.png' },
+                  { name: 'Bangalore International Public School', logo: '/assets/JB Clients Logos/BIPS.png' },
+                  { name: 'Bangalore International Kids High', logo: '/assets/JB Clients Logos/kids high School.png' },
+                  { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
+                  { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
+                  { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
+                  { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
+                  { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
+                  { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
+                  { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
                 ].concat([
                   /* Duplicate set for seamless loop */
-                  { name: 'Alpine Public School', logo: '/assets/Alpine Public School.jpg' },
-                  { name: 'Ashoka High School', logo: '/assets/Ashoka High School.jpg' },
-                  { name: 'Arise International School', logo: '/assets/Arise International School.jpg' },
-                  { name: 'Bangalore International Academy', logo: '/assets/Bangalore International Academy.jpg' },
-                  { name: 'Bangalore International Public School', logo: '/assets/Bangalore International Public School.jpg' },
-                  { name: 'Bangalore International Kids High', logo: '/assets/Bangalore International Kids High.jpg' },
-                  { name: 'Bhavan Bangalore Press School', logo: '/assets/Bhavan Bangalore Press School.jpg' },
-                  { name: 'Billabong High International School', logo: '/assets/Billabong High International School.jpg' },
-                  { name: 'Riverdale High School', logo: '/assets/Riverdale High School.jpg' },
-                  { name: 'Gaikwad Global School', logo: '/assets/Gaikwad Global School.jpg' },
-                  { name: 'SEA International School', logo: '/assets/SEA International School.jpg' },
-                  { name: 'SM English School', logo: '/assets/SM English School.jpg' },
-                  { name: 'SVR Chinmaya School', logo: '/assets/SVR Chinmaya School.jpg' },
+                  { name: 'Alpine Public School', logo: '/assets/JB Clients Logos/Alpine.png' },
+                  { name: 'Ashoka High School', logo: '/assets/JB Clients Logos/ashoka-hall-school.jpg' },
+                  { name: 'Arise International School', logo: '/assets/JB Clients Logos/Arise School.png' },
+                  { name: 'Bangalore International Academy', logo: '/assets/JB Clients Logos/bangalore-international-academy- Combined.png' },
+                  { name: 'Bangalore International Public School', logo: '/assets/JB Clients Logos/BIPS.png' },
+                  { name: 'Bangalore International Kids High', logo: '/assets/JB Clients Logos/kids high School.png' },
+                  { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
+                  { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
+                  { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
+                  { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
+                  { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
+                  { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
+                  { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
                 ]).map((partner, idx) => (
                   <div
                     key={idx}
@@ -487,16 +457,16 @@ export default function About() {
               className="mt-10 flex flex-wrap justify-center gap-8 pt-8 border-t border-gray-200"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#c11e38]">13+</div>
+                <div className="text-3xl font-bold text-[#c11e38]">10+</div>
+                <div className="text-sm text-gray-600 mt-1">Programs Offered</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#c11e38]">50+</div>
                 <div className="text-sm text-gray-600 mt-1">Partner Schools</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#c11e38]">5,000+</div>
-                <div className="text-sm text-gray-600 mt-1">Students Reached</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#c11e38]">100+</div>
-                <div className="text-sm text-gray-600 mt-1">Programs Delivered</div>
+                <div className="text-3xl font-bold text-[#c11e38]">100K+</div>
+                <div className="text-sm text-gray-600 mt-1">Students Enriched</div>
               </div>
             </motion.div>
           </div>
