@@ -50,21 +50,21 @@ export default function Stats() {
   const items = [
     { 
       id: 1, 
-      value: "50+", 
-      label: "Schools Empowered", 
-      desc: "Partnering with institutions across India to build hands on STEM, Robotics & AI ecosystems."
+      value: "10+", 
+      label: "Programs Offered", 
+      desc: "Comprehensive STEM, Robotics, AI, and skill development programs designed for schools, colleges, and individual learners."
     },
     { 
       id: 2, 
-      value: "100k+", 
-      label: "Students Skilled", 
-      desc: "Learners from Grade 1 to Engineering trained in Robotics, Coding, AI, IoT & Drones through real, project based experiences."
+      value: "50+", 
+      label: "Partner Schools", 
+      desc: "Partnering with institutions across India to build hands on STEM, Robotics & AI ecosystems."
     },
     { 
       id: 3, 
-      value: "500+", 
-      label: "Innovative Projects", 
-      desc: "From IoT systems to AI automations, students design and build impactful models that strengthen problem solving and creativity."
+      value: "100K+", 
+      label: "Students Enriched", 
+      desc: "Learners from Grade 1 to Engineering trained in Robotics, Coding, AI, IoT & Drones through real, project based experiences."
     },
     { 
       id: 4, 

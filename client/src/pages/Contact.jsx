@@ -6,24 +6,24 @@ import { FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa"
 
 const OFFICES = [
   {
-    city: "Bangalore",
-    address: "Join Botics Technology Pvt Ltd, Karnataka",
-    phones: ["+919986780347", "+916361212260"],
-    phoneDisplay: "+91 99867 80347 / +91 63612 12260",
-    email: "connect@joinbotics.com"
-  },
-  {
-    city: "Aurangabad",
-    address: "Divya Pariwartan Computers, Chh. Sambhaji Nagar, Maharashtra",
+    city: "Bengaluru",
+    address: "CG04 Casagrand Royce, Kodigehalli Main Road, Bengaluru",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
   },
   {
     city: "Hyderabad",
-    address: "Join Botics Office, Telangana",
-    phones: ["+919986780347", "+916361212260"],
-    phoneDisplay: "+91 99867 80347 / +91 63612 12260",
+    address: "# 302, ARCK Advaita, Shivapuri, Bairagiguda, Hyderabad",
+    phones: ["+916361212260", "+919986780347"],
+    phoneDisplay: "+91 63612 12260 / +91 99867 80347",
+    email: "connect@joinbotics.com"
+  },
+  {
+    city: "Chhatrapati Sambhajinagar",
+    address: "Unique Coding Institute, PWD Colony, Chhatrapati Sambhajinagar",
+    phones: ["+919673654009", "+919986780347"],
+    phoneDisplay: "+91 9673654009 / +91 99867 80347",
     email: "connect@joinbotics.com"
   }
 ];
@@ -92,7 +92,7 @@ export default function Contact() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Get in Touch</h1>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Have questions? We're here to help you transform your learning journey
+              Let's connect — we're here to help you explore the right learning solutions.
             </p>
           </motion.div>
         </div>
@@ -268,9 +268,9 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Offices</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Presence</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Visit us at any of our locations across India
+              We're available across multiple office locations throughout India.
             </p>
           </motion.div>
 
@@ -291,9 +291,13 @@ export default function Contact() {
                   <div className="flex items-start gap-2">
                     <FaPhone className="text-blue-500 flex-shrink-0 mt-0.5" />
                     <div className="flex flex-wrap items-center gap-1">
-                      <a href={`tel:${office.phones[0]}`} className="hover:text-blue-600 transition whitespace-nowrap">+91 99867 80347</a>
+                      <a href={`tel:${office.phones[0]}`} className="hover:text-blue-600 transition whitespace-nowrap">
+                        {office.phones[0].replace(/(\+91)(\d{5})(\d{5})/, '$1 $2 $3')}
+                      </a>
                       <span className="text-gray-400">/</span>
-                      <a href={`tel:${office.phones[1]}`} className="hover:text-blue-600 transition whitespace-nowrap">+91 63612 12260</a>
+                      <a href={`tel:${office.phones[1]}`} className="hover:text-blue-600 transition whitespace-nowrap">
+                        {office.phones[1].replace(/(\+91)(\d{5})(\d{5})/, '$1 $2 $3')}
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
@@ -317,7 +321,7 @@ export default function Contact() {
           className="rounded-2xl overflow-hidden shadow-2xl"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124423.7567!2d77.5!3d12.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7420821765843!2d77.58474631482238!3d13.048570790790892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f3e65a5b77%3A0x3d3e3f3e3f3e3f3e!2sCasagrand%20Royce%2C%20Kodigehalli%20Main%20Rd%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1234567890"
             width="100%"
             height="450"
             style={{ border: 0 }}

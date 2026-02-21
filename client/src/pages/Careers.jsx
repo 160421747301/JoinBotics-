@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaBriefcase, FaGraduationCap, FaUsers, FaRocket, FaHeart, FaLaptop, FaClock, FaMapMarkerAlt, FaCheckCircle, FaMoneyBillWave, FaMountain, FaLightbulb } from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap, FaUsers, FaRocket, FaHeart, FaLaptop, FaClock, FaMapMarkerAlt, FaCheckCircle, FaMoneyBillWave, FaMountain, FaLightbulb, FaShieldAlt } from "react-icons/fa";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Footer from "../components/Footer";
@@ -51,12 +51,12 @@ export default function Careers() {
   const JOB_OPENINGS = [
     {
       id: 1,
-      title: "STEM Trainer",
+      title: "Robotics Engineer",
       type: "Full-Time",
-      locations: ["Bangalore", "Pune", "Aurangabad"],
+      locations: ["Bengaluru", "Jabalpur"],
       experience: "1-3 years",
       category: "Education",
-      description: "Passionate educator to deliver robotics and STEAM curriculum to students across grades",
+      description: "Passionate educator to deliver Robotics and STEM curricula to students across grades",
       responsibilities: [
         "Conduct hands-on robotics and STEAM sessions for students",
         "Prepare and execute engaging lesson plans aligned with curriculum",
@@ -76,62 +76,6 @@ export default function Careers() {
       skills: ["Robotics", "Python/Scratch", "Communication", "Classroom Management"],
       icon: FaGraduationCap,
       color: "from-[#c11e38] to-[#220b34]"
-    },
-    {
-      id: 2,
-      title: "Curriculum Developer",
-      type: "Full-Time",
-      locations: ["Bangalore", "Pune"],
-      experience: "2-5 years",
-      category: "Content",
-      description: "Creative minds to design innovative STEAM curriculum and learning materials",
-      responsibilities: [
-        "Design grade-wise curriculum aligned with NEP 2020 and international standards",
-        "Create engaging learning materials, worksheets, and activity guides",
-        "Develop project-based learning modules and assessment frameworks",
-        "Research latest trends in STEM education and EdTech",
-        "Collaborate with trainers and gather feedback for improvements",
-        "Create content for digital platforms and LMS integration"
-      ],
-      qualifications: [
-        "Bachelor's or Master's degree in Education or Engineering",
-        "2+ years in content creation for education",
-        "Skills: STEM content writing, LMS platforms, project-based learning design",
-        "Deep understanding of K-12 education and pedagogy",
-        "Strong writing and content creation skills",
-        "**Freshers with strong academic background can apply**"
-      ],
-      skills: ["Curriculum Design", "Instructional Design", "Research", "Content Writing"],
-      icon: FaBriefcase,
-      color: "from-purple-600 to-pink-500"
-    },
-    {
-      id: 3,
-      title: "Marketing & Outreach Executive",
-      type: "Full-Time",
-      locations: ["Bangalore", "Pune", "Aurangabad", "Ahmedabad"],
-      experience: "1-2 years",
-      category: "Business",
-      description: "Dynamic marketers to drive growth and expand our reach to schools and institutions",
-      responsibilities: [
-        "Identify and approach potential schools and educational institutions",
-        "Conduct product demonstrations and presentations",
-        "Build and maintain relationships with school administrators",
-        "Develop and execute marketing strategies for lead generation",
-        "Organize workshops, webinars, and promotional events",
-        "Achieve sales targets and contribute to business growth"
-      ],
-      qualifications: [
-        "Any graduate with excellent communication skills",
-        "1-2 years in education marketing (preferred)",
-        "Skills: School outreach, CRM, social media, event management",
-        "Self-motivated with strong interpersonal skills",
-        "Ability to work independently and meet targets",
-        "**Freshers with strong communication can apply**"
-      ],
-      skills: ["Sales", "Communication", "Relationship Building", "Presentation"],
-      icon: FaUsers,
-      color: "from-[#8a1532] to-[#220b34]"
     }
   ];
 
@@ -139,29 +83,29 @@ export default function Careers() {
     {
       id: 1,
       title: "STEM Teaching Internship",
-      duration: "3-6 months",
-      locations: ["Bangalore", "Pune", "Aurangabad"],
-      stipend: "Certificate & Stipend provided",
-      description: "For college students and freshers - Get hands-on training in teaching robotics & AI in schools",
+      duration: "3–6 months",
+      locations: ["Bengaluru", "Pune", "Aurangabad"],
+      stipend: "Certificate & Stipend",
+      description: "Learn to deliver Robotics, Coding, and AI sessions in schools through guided classroom training.",
       learnings: ["Teaching methodologies", "Robotics & coding delivery", "Student engagement", "Classroom management", "Certificate upon completion"]
     },
     {
       id: 2,
       title: "Content Development Internship",
-      duration: "3-6 months",
-      locations: ["Bangalore", "Pune"],
-      stipend: "Certificate & Stipend provided",
-      description: "Create educational content and learning materials for STEAM programs",
-      learnings: ["Content writing", "Curriculum design", "EdTech tools", "Instructional design", "Digital content creation"]
+      duration: "3–6 months",
+      locations: ["Bengaluru", "Pune"],
+      stipend: "Certificate & Stipend",
+      description: "Create engaging learning content and activity resources for STEM/STEAM programs.",
+      learnings: ["Content writing", "Curriculum planning", "Instructional design", "EdTech tools", "Digital content creation"]
     },
     {
       id: 3,
       title: "Business Development Internship",
-      duration: "3-6 months",
-      locations: ["All locations"],
-      stipend: "Certificate & Stipend + Incentives",
-      description: "Support sales and marketing efforts, work with schools and clients",
-      learnings: ["Sales skills", "Client management", "Marketing strategies", "Business communication", "School outreach"]
+      duration: "3–6 months",
+      locations: ["Multiple locations"],
+      stipend: "Certificate, Stipend & Incentives",
+      description: "Support outreach, partnerships, and growth initiatives by working with schools and clients.",
+      learnings: ["Sales fundamentals", "Client relationship management", "Marketing & outreach", "Business communication", "School partnership support"]
     }
   ];
 
@@ -169,27 +113,32 @@ export default function Careers() {
     {
       icon: FaLightbulb,
       title: "Innovation in Education",
-      description: "We believe in transforming traditional learning through cutting-edge STEAM methodologies and hands-on experiences"
+      description: "We design hands-on STEM experiences that turn curiosity into real-world creation."
     },
     {
       icon: FaHeart,
       title: "Passion for Teaching & Learning",
-      description: "Driven by the mission to ignite curiosity and empower young minds to become future innovators and problem-solvers"
+      description: "We ignite a love for learning by making technology engaging, practical, and fun."
     },
     {
       icon: FaUsers,
       title: "Collaboration & Team Spirit",
-      description: "We thrive on teamwork, open communication, and supporting each other to achieve collective goals"
+      description: "We grow through teamwork, open communication, and shared ownership of outcomes."
     },
     {
       icon: FaRocket,
       title: "Growth Mindset",
-      description: "Continuous learning and development for both our team and the students we serve"
+      description: "We learn continuously—improving our skills, methods, and impact every day."
     },
     {
       icon: FaCheckCircle,
       title: "Outcome-Driven Work Culture",
-      description: "Focused on measurable impact - student engagement, skill development, and real-world project success"
+      description: "We measure success through student progress, project quality, and learning outcomes."
+    },
+    {
+      icon: FaShieldAlt,
+      title: "Integrity & Learner-First Focus",
+      description: "We build trust by staying transparent, responsible, and committed to every learner's success."
     }
   ];
 
@@ -197,32 +146,32 @@ export default function Careers() {
     {
       icon: FaGraduationCap,
       title: "Continuous Training & Certification",
-      description: "Regular upskilling in robotics, AI, coding platforms, and modern teaching methodologies with industry-recognized certifications"
+      description: "Stay updated with the latest in Robotics, AI, and STEM through ongoing training and certified learning pathways."
     },
     {
       icon: FaClock,
       title: "Flexible Work Options",
-      description: "Hybrid work for content/design roles, on-ground engagement at partner schools for trainers, and remote opportunities for tech roles"
+      description: "Hybrid, remote, and on‑site opportunities designed to support diverse roles and work styles."
     },
     {
       icon: FaMoneyBillWave,
       title: "Stipends & Performance Bonuses",
-      description: "Competitive salaries with performance-based incentives and rewards for exceptional contributions"
+      description: "Competitive pay with performance-based incentives that reward impact and excellence."
     },
     {
       icon: FaRocket,
       title: "Startup Energy + Education Purpose",
-      description: "Experience the dynamic pace of a growing edtech company while making a meaningful impact on children's education"
+      description: "Work in a dynamic, fast‑growing EdTech team while making a real difference in students' futures."
     },
     {
       icon: FaMountain,
-      title: "Annual Retreats & Team-Building",
-      description: "Company-wide offsites, team bonding activities, and celebrations to foster collaboration and recharge"
+      title: "Annual Retreats & Team‑Building",
+      description: "Enjoy offsites, bonding activities, and team events that strengthen collaboration and culture."
     },
     {
       icon: FaHeart,
       title: "Impactful Mission",
-      description: "Be part of shaping India's future by empowering 1,00,000+ students across 90+ schools with 21st-century skills"
+      description: "Be part of transforming STEM education and empowering thousands of students with future-ready skills."
     }
   ];
 
@@ -475,7 +424,7 @@ export default function Careers() {
           >
             <h2 className="text-4xl font-bold text-white mb-4">Internship Opportunities</h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Kickstart your career with hands-on experience and mentorship
+              Kickstart your career with hands-on experience and expert mentorship.
             </p>
           </motion.div>
 
@@ -512,45 +461,6 @@ export default function Careers() {
                     ))}
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Work Locations */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Offices</h2>
-            <p className="text-lg text-gray-700 mb-2">We're growing across major cities in India</p>
-            <p className="text-base text-gray-600 max-w-3xl mx-auto">
-              Work with partner schools across Maharashtra, Karnataka, Telangana, and Madhya Pradesh. Remote opportunities available for design, content development, and tech roles.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {WORK_LOCATIONS.map((location, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white/60 backdrop-blur-md border border-white/30 rounded-xl p-6 text-center shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-              >
-                <FaMapMarkerAlt className="text-4xl text-red-600 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{location.city}</h3>
-                <p className="text-sm text-gray-600 mb-2">{location.state}</p>
-                <p className="text-gray-700 text-sm mb-2">{location.address}</p>
-                <span className="inline-block bg-[#220b34]/10 text-[#220b34] px-3 py-1 rounded-full text-xs font-semibold">
-                  {location.type}
-                </span>
               </motion.div>
             ))}
           </div>

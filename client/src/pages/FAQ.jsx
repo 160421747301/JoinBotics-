@@ -91,7 +91,7 @@ export default function FAQ() {
       id: 12,
       category: "pricing",
       question: "What are the course fees and payment options?",
-      answer: "Pricing varies by course type, duration, and format:\n\nIndividual Students:\n• Workshops: ₹500 - ₹2,000 (1-15 days)\n• Short Courses: ₹2,000 - ₹8,000 (1-3 months)\n• Full Programs: ₹10,000 - ₹25,000 (6 months - 1 year)\n• Internships: May include stipend or nominal fees depending on program\n\nSpecial Discounts Available For:\n• Group enrollments (5+ students)\n• School collaborations (institutional rates)\n• Early bird registrations\n• Referral discounts\n\nPayment Options:\n• One-time payment\n• Installment plans available\n• EMI options for higher-value programs\n\nContact us for a customized quote based on your specific requirements!"
+      answer: "Pricing varies depending on the course type, duration, and format. Please get in touch with us for detailed information tailored to your specific needs and requirements."
     }
   ];
 

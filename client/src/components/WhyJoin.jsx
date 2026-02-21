@@ -3,7 +3,7 @@ import { FaGraduationCap, FaCogs, FaUserTie, FaHandshake, FaCertificate, FaRobot
 const ITEMS = [
   {
     key: "steam",
-    title: "Comprehensive STEAM Curriculum",
+    title: "Comprehensive STEM Curriculum",
     details: [
       "Aligned with CBSE, ICSE, IB & State Boards",
       "Covers Robotics, Coding, AI & IoT",
@@ -38,10 +38,10 @@ const ITEMS = [
     key: "trusted",
     title: "Trusted by Institutions",
     details: [
-      "120+ partnered schools",
-      "100+ workshops completed",
-      "Adopted by schools & colleges",
-      "Proven scalable implementation"
+      "Partnered with 50+ schools",
+      "Successfully delivered 100+ workshops",
+      "Widely adopted across schools and colleges",
+      "Scalable model with proven execution"
     ],
     icon: FaHandshake,
   },
