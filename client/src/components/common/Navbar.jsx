@@ -134,12 +134,12 @@ export default function Navbar() {
               {moreOpen && (
                 <div className="absolute right-0 mt-3 w-48 rounded-lg shadow-lg bg-white text-gray-800 ring-1 ring-black/5 transition-all duration-200 ease-in-out" role="menu">
                   <div className="py-2">
-                    <NavLink to="/global-exposure" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
+                    {/* <NavLink to="/global-exposure" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       Global Exposure
-                    </NavLink>
-                    <NavLink to="/success-stories" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
+                    </NavLink> */}
+                    {/* <NavLink to="/success-stories" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       Success Stories
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/ai-projects" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       AI Projects
                     </NavLink>
@@ -252,20 +252,20 @@ export default function Navbar() {
               {/* Divider */}
               <div className="border-t border-white/20 my-2"></div>
               
-              <NavLink 
+              {/* <NavLink 
                 to="/global-exposure" 
                 onClick={() => setMobileOpen(false)} 
                 className={({ isActive }) => `text-xl font-medium py-2 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/70 hover:text-white hover:bg-white/10'}`}
               >
                 Global Exposure
-              </NavLink>
-              <NavLink 
+              </NavLink> */}
+              {/* <NavLink 
                 to="/success-stories" 
                 onClick={() => setMobileOpen(false)} 
                 className={({ isActive }) => `text-xl font-medium py-2 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/70 hover:text-white hover:bg-white/10'}`}
               >
                 Success Stories
-              </NavLink>
+              </NavLink> */}
               <NavLink 
                 to="/ai-projects" 
                 onClick={() => setMobileOpen(false)} 
