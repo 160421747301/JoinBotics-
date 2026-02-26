@@ -126,7 +126,7 @@ export default function Franchise() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#220b34] to-[#c11e38] text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#220b34] to-[#c11e38] text-white pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -141,7 +141,7 @@ export default function Franchise() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Partner With <span className="text-yellow-400">Join Botics.</span>
+                Partner With <span className="text-yellow-400 whitespace-nowrap">Join Botics.</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 Build the Future of <span className="text-yellow-400">STEM Education.</span>
@@ -152,14 +152,14 @@ export default function Franchise() {
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="#apply"
-                  className="bg-[#c11e38] hover:bg-[#8a1532] text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
+                  className="bg-yellow-400 hover:bg-yellow-300 text-[#220b34] px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 shadow-lg"
                 >
                   Apply for Franchise
                 </a>
                 <a 
                   href="/assets/JoinBotics_Brochure.pdf"
                   target="_blank"
-                  className="bg-white text-[#220b34] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
+                  className="bg-white/10 border border-white/40 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg backdrop-blur-sm"
                 >
                   Download Brochure
                 </a>
@@ -170,14 +170,26 @@ export default function Franchise() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
+              className="grid grid-cols-2 gap-4"
             >
-              <img 
-                src="/assets/hero1.mp4" 
-                alt="Franchise Hero"
-                className="rounded-2xl shadow-2xl"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-              />
+              {[
+                { value: "50+", label: "Active Partners", icon: "🤝" },
+                { value: "20+", label: "Cities Covered", icon: "🌆" },
+                { value: "5+", label: "STEM Programs", icon: "🤖" },
+                { value: "6–12mo", label: "ROI Period", icon: "📈" },
+              ].map((stat, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + idx * 0.1 }}
+                  className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all"
+                >
+                  <div className="text-3xl mb-2">{stat.icon}</div>
+                  <div className="text-3xl font-bold text-yellow-400 mb-1">{stat.value}</div>
+                  <div className="text-sm text-white/80 font-medium">{stat.label}</div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>
