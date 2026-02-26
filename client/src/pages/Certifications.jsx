@@ -648,20 +648,13 @@ export default function Certifications() {
             <p className="text-xl text-white/90 mb-8">
               Experience globally recognized AI and Blockchain certification programs delivered through Join Botics — your trusted AI CERTs® Authorized Partner.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="/programs"
-                className="px-8 py-4 bg-white text-[#c11e38] rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 relative overflow-hidden group"
-              >
-                <span className="relative z-10">Explore Programs</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-              </a>
+            <div className="flex justify-center">
               <a
                 href="/contact"
-                className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-[#c11e38] hover:scale-105 transition-all duration-300 relative overflow-hidden group"
+                className="px-8 py-4 bg-white text-[#c11e38] rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 relative overflow-hidden group"
               >
                 <span className="relative z-10">Get in Touch</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
               </a>
             </div>
           </motion.div>

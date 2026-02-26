@@ -59,7 +59,7 @@ export default function FAQ() {
       id: 7,
       category: "programs",
       question: "Are classes conducted online or in-person?",
-      answer: "We offer both formats to suit your needs:\n\n• In-Person: Conducted at schools, colleges, and learning centers across India (Bangalore, Pune, Aurangabad, Hyderabad, and more)\n• Online Live Classes: Interactive sessions via Zoom/Google Meet with real-time doubt solving\n• Hybrid Learning: Combination of online theory and in-person practical sessions with LMS support\n\nFor schools, we primarily conduct in-person classes. For individual students and college learners, all formats are available!"
+      answer: "We offer both formats to suit your needs:\n\n• In-Person: Conducted at schools, colleges, and learning centers across India (Bengaluru, Hyderabad, Ch. Sambhajinagar, and more)\n• Online Live Classes: Interactive sessions via Zoom/Google Meet with real-time doubt solving\n• Hybrid Learning: Combination of online theory and in-person practical sessions with LMS support\n\nFor schools, we primarily conduct in-person classes. For individual students and college learners, all formats are available!"
     },
     {
       id: 8,

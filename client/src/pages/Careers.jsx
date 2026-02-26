@@ -53,7 +53,7 @@ export default function Careers() {
       id: 1,
       title: "Robotics Engineer",
       type: "Full-Time",
-      locations: ["Bengaluru", "Jabalpur"],
+      locations: ["Bengaluru", "Hyderabad"],
       experience: "1-3 years",
       category: "Education",
       description: "Passionate educator to deliver Robotics and STEM curricula to students across grades",
@@ -82,9 +82,9 @@ export default function Careers() {
   const INTERNSHIPS = [
     {
       id: 1,
-      title: "STEM Teaching Internship",
+      title: "STEM Educator Internship",
       duration: "3–6 months",
-      locations: ["Bengaluru", "Pune", "Aurangabad"],
+      locations: ["Bengaluru", "Hyderabad", "Ch. Sambhajinagar"],
       stipend: "Certificate & Stipend",
       description: "Learn to deliver Robotics, Coding, and AI sessions in schools through guided classroom training.",
       learnings: ["Teaching methodologies", "Robotics & coding delivery", "Student engagement", "Classroom management", "Certificate upon completion"]
@@ -93,7 +93,7 @@ export default function Careers() {
       id: 2,
       title: "Content Development Internship",
       duration: "3–6 months",
-      locations: ["Bengaluru", "Pune"],
+      locations: ["Bengaluru", "Hyderabad"],
       stipend: "Certificate & Stipend",
       description: "Create engaging learning content and activity resources for STEM/STEAM programs.",
       learnings: ["Content writing", "Curriculum planning", "Instructional design", "EdTech tools", "Digital content creation"]
@@ -177,27 +177,21 @@ export default function Careers() {
 
   const WORK_LOCATIONS = [
     {
-      city: "Bangalore",
+      city: "Bengaluru",
       state: "Karnataka",
-      address: "Koramangala, Bangalore",
+      address: "Koramangala, Bengaluru",
       type: "Head Office"
     },
     {
-      city: "Pune",
-      state: "Maharashtra",
-      address: "Kalyani Nagar, Pune",
+      city: "Hyderabad",
+      state: "Telangana",
+      address: "Gachibowli, Hyderabad",
       type: "Regional Office"
     },
     {
-      city: "Aurangabad",
+      city: "Ch. Sambhajinagar",
       state: "Maharashtra",
-      address: "CIDCO, Aurangabad",
-      type: "Regional Office"
-    },
-    {
-      city: "Ahmedabad",
-      state: "Gujarat",
-      address: "Satellite, Ahmedabad",
+      address: "CIDCO, Ch. Sambhajinagar",
       type: "Regional Office"
     }
   ];
@@ -589,10 +583,9 @@ export default function Careers() {
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
                     >
                       <option value="">Select location</option>
-                      <option value="Bangalore">Bangalore</option>
-                      <option value="Pune">Pune</option>
-                      <option value="Aurangabad">Aurangabad</option>
-                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Bengaluru">Bengaluru</option>
+                      <option value="Hyderabad">Hyderabad</option>
+                      <option value="Ch. Sambhajinagar">Ch. Sambhajinagar</option>
                     </select>
                     {errors.location && (
                       <p className="text-red-600 text-sm mt-1">{errors.location.message}</p>

@@ -7,7 +7,7 @@ import { FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa"
 const OFFICES = [
   {
     city: "Bengaluru",
-    address: "CG04 Casagrand Royce, Kodigehalli Main Road, Bengaluru",
+    address: "CG04, Casagrand Royce, Kodigehalli Main Road, Bengaluru",
     phones: ["+919986780347", "+916361212260"],
     phoneDisplay: "+91 99867 80347 / +91 63612 12260",
     email: "connect@joinbotics.com"
@@ -321,7 +321,7 @@ export default function Contact() {
           className="rounded-2xl overflow-hidden shadow-2xl"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7420821765843!2d77.58474631482238!3d13.048570790790892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f3e65a5b77%3A0x3d3e3f3e3f3e3f3e!2sCasagrand%20Royce%2C%20Kodigehalli%20Main%20Rd%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5899345891443!2d77.71827531482251!3d13.003084490793726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1165dc26670f%3A0x2b9c4de8196c3343!2sJoin%20Botics%20Technology%20Pvt%20LTD!5e0!3m2!1sen!2sin!4v1234567890"
             width="100%"
             height="450"
             style={{ border: 0 }}

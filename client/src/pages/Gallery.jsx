@@ -109,6 +109,153 @@ const GALLERY_IMAGES = [
     category: "all",
     image: "/assets/Gallery Images JB/15.jpeg",
   },
+  {
+    id: 16,
+    title: "Student Interactions - 1",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/1.jpg",
+  },
+  {
+    id: 17,
+    title: "Student Interactions - 2",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/2.jpg",
+  },
+  {
+    id: 18,
+    title: "Student Interactions - 3",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/3.jpeg",
+  },
+  {
+    id: 19,
+    title: "Student Interactions - 4",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/4.jpeg",
+  },
+  {
+    id: 20,
+    title: "Student Interactions - 5",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/5.jpeg",
+  },
+  {
+    id: 21,
+    title: "Student Interactions - 6",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/6.jpeg",
+  },
+  {
+    id: 22,
+    title: "Student Interactions - 7",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/7.jpeg",
+  },
+  {
+    id: 23,
+    title: "Student Interactions - 8",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/8.jpeg",
+  },
+  {
+    id: 24,
+    title: "Student Interactions - 9",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/9.jpeg",
+  },
+  {
+    id: 25,
+    title: "Student Interactions - 10",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/10.jpeg",
+  },
+  {
+    id: 26,
+    title: "Student Interactions - 11",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/11.jpeg",
+  },
+  {
+    id: 27,
+    title: "Student Interactions - 12",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/12.jpeg",
+  },
+  {
+    id: 28,
+    title: "Student Interactions - 13",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/13.jpeg",
+  },
+  {
+    id: 29,
+    title: "Student Interactions - 14",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/14.jpeg",
+  },
+  {
+    id: 30,
+    title: "Student Interactions - 15",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/15.jpeg",
+  },
+  {
+    id: 31,
+    title: "Student Interactions - 16",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/16.jpeg",
+  },
+  {
+    id: 32,
+    title: "Student Interactions - 17",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/17.jpeg",
+  },
+  {
+    id: 33,
+    title: "Student Interactions - 18",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/18.jpeg",
+  },
+  {
+    id: 34,
+    title: "Student Interactions - 19",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/19.jpeg",
+  },
+  {
+    id: 35,
+    title: "Student Interactions - 20",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/20.jpeg",
+  },
+  {
+    id: 36,
+    title: "Student Interactions - 21",
+    description: "Students engaging with STEM activities and robotics",
+    category: "all",
+    image: "/assets/Interactions/21.jpeg",
+  },
 ];
 
 const VIDEOS = [
@@ -197,7 +344,7 @@ export default function Gallery() {
             className="text-center"
           >
             <FaImage className="text-6xl mx-auto mb-6 text-white" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Gallery & Videos</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Moments</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Explore our journey through images and videos showcasing student achievements, workshops, and innovations
             </p>
@@ -219,7 +366,7 @@ export default function Gallery() {
             }`}
           >
             <FaImage />
-            Photo Gallery
+            Visual Collections
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -232,7 +379,7 @@ export default function Gallery() {
             }`}
           >
             <FaVideo />
-            Videos
+            Visual Stories
           </motion.button>
         </div>
 
@@ -300,7 +447,7 @@ export default function Gallery() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white"
+                className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
               >
                 <div className="aspect-video overflow-hidden">
                   <iframe
@@ -310,10 +457,6 @@ export default function Gallery() {
                     allowFullScreen
                     className="w-full h-full"
                   ></iframe>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">{video.title}</h3>
-                  <p className="text-gray-600 text-sm">{video.description}</p>
                 </div>
               </motion.div>
             ))}

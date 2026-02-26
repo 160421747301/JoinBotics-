@@ -100,6 +100,9 @@ export default function Navbar() {
               Programs
             </NavLink>
 
+            <NavLink to="/franchise" className={({ isActive }) => linkClass(isActive)}>
+              Franchise
+            </NavLink>
 
             {/* More dropdown */}
             <div
@@ -144,7 +147,7 @@ export default function Navbar() {
                       AI Projects
                     </NavLink>
                     <NavLink to="/gallery" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
-                      Gallery
+                      Moments
                     </NavLink>
                     <NavLink to="/careers" className={({ isActive }) => `block px-4 py-2 text-sm transition-colors duration-200 ${isActive ? 'font-semibold bg-[#c11e38] text-white' : 'hover:bg-[#c11e38] hover:text-white'}`}>
                       Careers
@@ -247,6 +250,13 @@ export default function Navbar() {
               >
                 Programs
               </NavLink>
+              <NavLink 
+                to="/franchise" 
+                onClick={() => setMobileOpen(false)} 
+                className={({ isActive }) => `text-2xl font-semibold py-3 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/80 hover:text-white hover:bg-white/10'}`}
+              >
+                Franchise
+              </NavLink>
 
               
               {/* Divider */}
@@ -278,7 +288,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)} 
                 className={({ isActive }) => `text-xl font-medium py-2 px-4 rounded-lg transition-all nav-underline ${isActive ? 'bg-white/20 text-white nav-underline-active' : 'text-white/70 hover:text-white hover:bg-white/10'}`}
               >
-                Gallery
+                Moments
               </NavLink>
               <NavLink 
                 to="/careers" 

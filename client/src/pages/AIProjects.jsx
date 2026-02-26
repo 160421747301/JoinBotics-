@@ -387,7 +387,7 @@ export default function AIProjects() {
               <div className="p-6 sm:p-8 md:p-12">
                 {/* Features Grid */}
                 {product.features && (
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="bg-gradient-to-br from-[#220b34]/5 to-[#c11e38]/5 rounded-xl p-6 border border-[#220b34]/10">
                         {feature.icon && <feature.icon className="text-3xl sm:text-4xl text-[#c11e38] mb-4" />}

@@ -81,10 +81,11 @@ export default function About() {
     { name: 'Bhavan Bangalore Press School', logo: '/assets/JB Clients Logos/Bangalore Bhavans Press School.jpg' },
     { name: 'Billabong High International School', logo: '/assets/JB Clients Logos/billabong.png' },
     { name: 'Riverdale High School', logo: '/assets/JB Clients Logos/River Dale School.jfif' },
-    { name: 'Prayag International School', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
+    { name: 'Prayag Montessori', logo: '/assets/JB Clients Logos/Prayag_Logo.png' },
     { name: 'SEA International School', logo: '/assets/JB Clients Logos/Sea School.jfif' },
     { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
     { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
+    { name: 'Gaikwad Global School', logo: '/assets/JB Clients Logos/Gaikwad.jpg' },
   ];
 
   useEffect(() => {

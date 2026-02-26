@@ -37,7 +37,7 @@ export default function Footer() {
                   </div>
                   <div className="flex items-start gap-2">
                     <FaMapMarkerAlt className="flex-shrink-0 mt-1" />
-                    <span>Bangalore | Pune | Aurangabad | Ahmedabad</span>
+                    <span>Bengaluru | Hyderabad | Ch. Sambhajinagar</span>
                   </div>
                 </div>
 
@@ -68,25 +68,25 @@ export default function Footer() {
                     <li><a className="hover:text-white transition-colors" href="/">Home</a></li>
                     <li><a className="hover:text-white transition-colors" href="/about">About Us</a></li>
                     <li><a className="hover:text-white transition-colors" href="/programs">Programs</a></li>
-                    <li><a className="hover:text-white transition-colors" href="/contact">Contact</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/contact">Contact Us</a></li>
                   </ul>
                 </div>
 
                 <div>
                   <h4 className="text-slate-300 text-sm font-medium mb-4">Services</h4>
                   <ul className="mt-4 space-y-3 text-slate-200 text-sm">
-                    <li><a className="hover:text-white transition-colors" href="/programs">For Schools</a></li>
-                    <li><a className="hover:text-white transition-colors" href="/programs">For Students</a></li>
-                    <li><a className="hover:text-white transition-colors" href="/kits">Robotics Kits</a></li>
-                    <li><a className="hover:text-white transition-colors" href="/lms">LMS Platform</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/techno-tamers-lab">Techno Tamers Lab</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/activity-center">Activity Center</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/certifications">Certifications</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/franchise">Franchise</a></li>
                   </ul>
                 </div>
 
                 <div>
                   <h4 className="text-slate-300 text-sm font-medium mb-4">Resources</h4>
                   <ul className="mt-4 space-y-3 text-slate-200 text-sm">
-                    <li><a className="hover:text-white transition-colors" href="/gallery">Gallery</a></li>
-                    <li><a className="hover:text-white transition-colors" href="/success-stories">Success Stories</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/gallery">Moments</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/ai-projects">AI Projects</a></li>
                     <li><a className="hover:text-white transition-colors" href="/faq">FAQ</a></li>
                     <li><a className="hover:text-white transition-colors" href="/careers">Careers</a></li>
                   </ul>

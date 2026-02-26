@@ -17,6 +17,7 @@ import Gallery from "../pages/Gallery";
 import Careers from "../pages/Careers";
 import FAQ from "../pages/FAQ";
 import AIProjects from "../pages/AIProjects";
+import Franchise from "../pages/Franchise";
 import AdminEmails from "../pages/AdminEmails";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsOfService from "../pages/TermsOfService";
@@ -30,7 +31,9 @@ export default function AppRoutes() {
       {/* <Route path="/global-exposure" element={<GlobalExposure />} /> */}
       <Route path="/programs" element={<Programs />} />
       <Route path="/programs/techno-tamers-lab" element={<TechnoTamersLab />} />
+      <Route path="/techno-tamers-lab" element={<TechnoTamersLab />} />
       <Route path="/programs/activity-center" element={<ActivityCenter />} />
+      <Route path="/activity-center" element={<ActivityCenter />} />
       <Route path="/programs/college" element={<College />} />
       <Route path="/programs/corporate-training" element={<CorporateTraining />} />
       <Route path="/products" element={<Products />} />
@@ -41,6 +44,7 @@ export default function AppRoutes() {
       <Route path="/careers" element={<Careers />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/ai-projects" element={<AIProjects />} />
+      <Route path="/franchise" element={<Franchise />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
