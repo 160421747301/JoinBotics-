@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { FaCertificate, FaAward, FaCheckCircle, FaGraduationCap, FaUsers, FaStar, FaHandshake, FaBriefcase, FaShieldAlt, FaCloud, FaCode, FaLightbulb, FaDatabase, FaChalkboardTeacher, FaPalette, FaBitcoin, FaChevronDown } from "react-icons/fa";
 
@@ -171,9 +172,15 @@ const COURSE_CATEGORIES = [
 
 export default function Certifications() {
   const [expandedCategory, setExpandedCategory] = useState(null);
+  const navigate = useNavigate();
 
   const toggleCategory = (categoryId) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
+  };
+
+  const handleCourseClick = () => {
+    window.scrollTo(0, 0);
+    navigate('/contact');
   };
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
@@ -589,7 +596,8 @@ export default function Certifications() {
                               initial={{ opacity: 0, scale: 0.95 }}
                               animate={{ opacity: 1, scale: 1 }}
                               transition={{ duration: 0.2, delay: idx * 0.03 }}
-                              className="flex items-start gap-2 p-3 bg-white rounded-lg border border-gray-100 hover:border-[#c11e38]/30 hover:shadow-md transition-all"
+                              className="flex items-start gap-2 p-3 bg-white rounded-lg border border-gray-100 hover:border-[#c11e38]/30 hover:shadow-md transition-all cursor-pointer"
+                              onClick={handleCourseClick}
                             >
                               <FaCheckCircle className="text-[#c11e38] text-sm mt-0.5 flex-shrink-0" />
                               <span className="font-medium text-gray-800 text-sm leading-snug">

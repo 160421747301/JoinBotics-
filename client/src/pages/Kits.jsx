@@ -148,7 +148,7 @@ export default function Kits() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Robotics & STEAM Kits</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Robotics & STEM Kits</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Comprehensive range of educational kits designed to inspire curiosity, build innovation, and enhance 21st-century skills
             </p>

@@ -19,7 +19,7 @@ export default function TechnoTamersLab() {
       {
         title: "Curriculum Integration",
         items: [
-          "NEP‑aligned, age‑appropriate STEAM & Robotics curriculum",
+          "NEP‑aligned, age‑appropriate STEM & Robotics curriculum",
           "Structured learning pathway from Grade 1 onwards",
           "Covers Robotics, Coding, AI/ML, IoT, Drones & 3D Printing",
           "Project‑based modules with tracking and skill outcomes"

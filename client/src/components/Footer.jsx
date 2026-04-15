@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="mt-12 bg-[#220b34] w-full">
       <div className="w-full">
         <div className="text-white">
-          <div className="px-8 py-12 md:py-20 max-w-7xl mx-auto">
+          <div className="px-8 py-10 md:py-12 max-w-screen-2xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               <div className="md:col-span-4">
                 <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -99,7 +99,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="px-8 pb-8 max-w-7xl mx-auto">
+          <div className="px-8 pb-8 max-w-screen-2xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl py-4 px-6 flex flex-col md:flex-row items-center justify-center gap-4">
               <div className="text-slate-300 text-sm">© {new Date().getFullYear()} Join Botics, Inc. All rights reserved.</div>
             </div>

@@ -29,12 +29,12 @@ export default function SuccessStories() {
         }
       },
       after: {
-        transformation: "State-of-the-art STEAM lab with Join Botics curriculum integration",
+        transformation: "State-of-the-art STEM lab with Join Botics curriculum integration",
         achievements: [
           "Students won 15+ state and national level competitions",
           "100% participation in project-based learning activities",
           "Teachers certified in robotics and AI education",
-          "Became a model school for STEAM education in Maharashtra"
+          "Became a model school for STEM education in Maharashtra"
         ],
         stats: {
           stemInterest: 92,
@@ -175,9 +175,9 @@ export default function SuccessStories() {
       icon: FaAward,
       title: "9th Global Education & Skills Summit 2024",
       location: "Delhi, India",
-      description: "Recognized for excellence in STEAM education and innovation in EdTech",
+      description: "Recognized for excellence in STEM education and innovation in EdTech",
       year: "2024",
-      color: "from-yellow-500 to-orange-500"
+      color: "from-[#c11e38] to-[#220b34]"
     },
     {
       icon: FaTrophy,
@@ -185,7 +185,7 @@ export default function SuccessStories() {
       location: "Shanghai, China",
       description: "Featured at the National Convention and Exhibition Center for pioneering work in robotics education",
       year: "2024",
-      color: "from-red-500 to-pink-500"
+      color: "from-[#c11e38] to-[#220b34]"
     },
     {
       icon: FaAward,
@@ -193,7 +193,7 @@ export default function SuccessStories() {
       location: "Maharashtra & Karnataka",
       description: "Awarded by multiple schools and educational institutions for transformative impact",
       year: "2023-2024",
-      color: "from-purple-500 to-indigo-500"
+      color: "from-[#c11e38] to-[#220b34]"
     },
     {
       icon: FaTrophy,
@@ -201,7 +201,7 @@ export default function SuccessStories() {
       location: "India",
       description: "Recognized for supporting Atal Tinkering Labs and fostering innovation in schools",
       year: "2023",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-[#c11e38] to-[#220b34]"
     }
   ];
 
@@ -266,7 +266,7 @@ export default function SuccessStories() {
       </section>
 
       {/* Awards & Recognition */}
-      <section className="py-20 px-4 bg-gradient-to-br from-yellow-50 to-orange-50">
+      <section className="py-20 px-4 bg-gradient-to-br from-[#c11e38]/5 to-[#220b34]/5">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -274,7 +274,7 @@ export default function SuccessStories() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white px-6 py-2 rounded-full mb-6">
               <FaAward />
               <span className="font-semibold">Awards & Recognition</span>
             </div>
@@ -282,7 +282,7 @@ export default function SuccessStories() {
               Industry Recognition & Global Impact
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Our commitment to excellence in STEAM education has been recognized nationally and internationally
+              Our commitment to excellence in STEM education has been recognized nationally and internationally
             </p>
           </motion.div>
 
@@ -331,7 +331,7 @@ export default function SuccessStories() {
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Media & Press Coverage</h3>
             <p className="text-gray-700 mb-6">
-              Featured in leading education publications and news outlets for our innovative approach to STEAM education
+              Featured in leading education publications and news outlets for our innovative approach to STEM education
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
               {["Education Times", "EdTech India", "Innovation News", "STEM Today", "Future Schools"].map((media, idx) => (

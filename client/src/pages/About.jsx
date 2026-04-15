@@ -86,6 +86,7 @@ export default function About() {
     { name: 'SM English School', logo: '/assets/JB Clients Logos/SM School.png' },
     { name: 'SVR Chinmaya School', logo: '/assets/JB Clients Logos/SVR Logo.jpg' },
     { name: 'Gaikwad Global School', logo: '/assets/JB Clients Logos/Gaikwad.jpg' },
+    { name: 'Quantanova School of Excellence', logo: '/assets/JB Clients Logos/Quantanova.png' },
   ];
 
   useEffect(() => {
@@ -497,7 +498,7 @@ export default function About() {
                   >
                     <div className="bg-white rounded-2xl p-5 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#c11e38]/30">
                       {/* Logo Container */}
-                      <div className="relative overflow-hidden rounded-xl bg-gray-50 h-32 flex items-center justify-center p-4">
+                      <div className="relative overflow-hidden rounded-xl bg-white h-32 flex items-center justify-center p-4">
                         <img 
                           src={partner.logo} 
                           alt={partner.name}

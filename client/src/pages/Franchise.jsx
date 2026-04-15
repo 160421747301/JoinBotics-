@@ -81,7 +81,7 @@ export default function Franchise() {
     },
     {
       icon: FaClock,
-      title: "6-12 Months ROI",
+      title: "3-6 Months ROI",
       description: "Achieve return on investment within the first year of operation"
     },
     {
@@ -173,10 +173,10 @@ export default function Franchise() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { value: "50+", label: "Active Partners", icon: "🤝" },
-                { value: "20+", label: "Cities Covered", icon: "🌆" },
-                { value: "5+", label: "STEM Programs", icon: "🤖" },
-                { value: "6–12mo", label: "ROI Period", icon: "📈" },
+                { value: "5+", label: "Active Partners", icon: "🤝" },
+                { value: "10+", label: "STEM Programs", icon: "🤖" },
+                { value: "5+", label: "Cities Covered", icon: "🌆" },
+                { value: "3-6 months", label: "ROI Period", icon: "📈" },
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
@@ -395,7 +395,7 @@ export default function Franchise() {
             </h2>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <a 
-                href="mailto:franchise@joinbotics.com"
+                href="mailto:connect@joinbotics.com"
                 className="bg-[#c11e38] hover:bg-[#8a1532] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg"
               >
                 Apply Now
@@ -411,8 +411,8 @@ export default function Franchise() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-white text-lg">
               <div className="flex items-center gap-2">
                 <FaEnvelope className="text-xl" />
-                <a href="mailto:franchise@joinbotics.com" className="hover:text-yellow-400 transition-colors">
-                  franchise@joinbotics.com
+                <a href="mailto:connect@joinbotics.com" className="hover:text-yellow-400 transition-colors">
+                  connect@joinbotics.com
                 </a>
               </div>
               <span className="hidden md:inline">|</span>

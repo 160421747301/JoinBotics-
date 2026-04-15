@@ -34,8 +34,8 @@ export default function LMS() {
   const UPCOMING_LMS = {
     title: "Join Botics LMS - Coming Soon",
     subtitle: "Techno Tamer's Lab",
-    description: "Our proprietary Learning Management System designed specifically for STEAM education, combining cutting-edge technology with pedagogical excellence.",
-    vision: "To create an immersive, gamified learning environment where students don't just learn robotics and automation—they live it. The Join Botics LMS will transform how students interact with STEAM concepts through virtual labs, AI-powered doubt solving, and personalized learning paths.",
+    description: "Our proprietary Learning Management System designed specifically for STEM education, combining cutting-edge technology with pedagogical excellence.",
+    vision: "To create an immersive, gamified learning environment where students don't just learn robotics and automation—they live it. The Join Botics LMS will transform how students interact with STEM concepts through virtual labs, AI-powered doubt solving, and personalized learning paths.",
     features: [
       {
         icon: FaGraduationCap,
@@ -115,7 +115,7 @@ export default function LMS() {
               Techno Tamer's Lab
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Where Learning Meets Innovation - Your Gateway to the Future of STEAM Education
+              Where Learning Meets Innovation - Your Gateway to the Future of STEM Education
             </p>
           </motion.div>
         </div>
@@ -147,7 +147,7 @@ export default function LMS() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border border-blue-200 hover:shadow-lg transition-shadow"
+                  className="bg-gradient-to-br from-white to-[#220b34]/5 p-6 rounded-xl border border-[#220b34]/20 hover:shadow-lg transition-shadow"
                 >
                   <feature.icon className="text-4xl text-[#220b34] mb-4" />
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -189,7 +189,7 @@ export default function LMS() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white px-6 py-2 rounded-full mb-6">
               <FaBell />
               <span className="font-semibold">Coming Soon</span>
             </div>
@@ -249,7 +249,7 @@ export default function LMS() {
               Development Roadmap
             </h2>
             <p className="text-lg text-gray-700">
-              Our journey to revolutionize STEAM education
+              Our journey to revolutionize STEM education
             </p>
           </motion.div>
 

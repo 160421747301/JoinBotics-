@@ -58,7 +58,7 @@ export default function Careers() {
       category: "Education",
       description: "Passionate educator to deliver Robotics and STEM curricula to students across grades",
       responsibilities: [
-        "Conduct hands-on robotics and STEAM sessions for students",
+        "Conduct hands-on robotics and STEM sessions for students",
         "Prepare and execute engaging lesson plans aligned with curriculum",
         "Manage classroom environments and student engagement",
         "Assess student progress and provide feedback",
@@ -95,7 +95,7 @@ export default function Careers() {
       duration: "3–6 months",
       locations: ["Bengaluru", "Hyderabad"],
       stipend: "Certificate & Stipend",
-      description: "Create engaging learning content and activity resources for STEM/STEAM programs.",
+      description: "Create engaging learning content and activity resources for STEM programs.",
       learnings: ["Content writing", "Curriculum planning", "Instructional design", "EdTech tools", "Digital content creation"]
     },
     {
@@ -408,7 +408,7 @@ export default function Careers() {
       </section>
 
       {/* Internships */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-600 to-pink-500">
+      <section className="py-20 px-4 bg-gradient-to-r from-[#c11e38] to-[#220b34]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

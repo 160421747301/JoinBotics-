@@ -71,33 +71,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
-      {/* Hero Section */}
-      <section className="relative text-white pt-32 pb-20 min-h-[78vh] flex items-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80" 
-            alt="Get in Touch"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-[#220b34]/80"></div>
-        </div>
-        <div className="mx-auto max-w-6xl px-6 w-full relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Get in Touch</h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Let's connect — we're here to help you explore the right learning solutions.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900 pt-24">
       {/* Contact Form & Info */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-8">

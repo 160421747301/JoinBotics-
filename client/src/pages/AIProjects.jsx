@@ -26,6 +26,11 @@ export default function AIProjects() {
           icon: FaDesktop,
           title: "Seamless Integration",
           desc: "Easy-to-deploy API/SDK that connects with existing websites, retail kiosks, and enterprise systems without disrupting operations."
+        },
+        {
+          icon: FaChartBar,
+          title: "Engagement Analytics",
+          desc: "Track user interactions, measure engagement metrics, and gain actionable insights to optimize performance and ROI."
         }
       ],
       businessValue: [
@@ -47,7 +52,7 @@ export default function AIProjects() {
       subtitle: "Intelligent voice agent for customer calls",
       description: "Handle customer calls with natural conversation, contextual memory, and emotion-aware responses—slashing costs while elevating satisfaction.",
       icon: FaPhone,
-      gradient: "from-purple-600 to-pink-500",
+      gradient: "from-[#c11e38] to-[#220b34]",
       features: [
         {
           icon: FaHeadset,
@@ -82,7 +87,7 @@ export default function AIProjects() {
       subtitle: "Transform your hiring process with AI-powered interviews",
       description: "Screen candidates, evaluate responses, and deliver structured insights—dramatically reducing time-to-hire.",
       icon: FaUserTie,
-      gradient: "from-[#8a1532] to-[#220b34]",
+      gradient: "from-[#c11e38] to-[#220b34]",
       features: [
         {
           icon: FaLightbulb,
@@ -98,6 +103,11 @@ export default function AIProjects() {
           icon: FaCog,
           title: "Seamless Integration",
           desc: "Auto-filters and ranks candidates by overall fit, then exports structured evaluation reports directly to your ATS or HRIS systems for streamlined decision-making."
+        },
+        {
+          icon: FaShieldAlt,
+          title: "Bias Reduction",
+          desc: "Standardized, data-driven evaluations help mitigate unconscious bias, promoting fair and consistent hiring practices."
         }
       ],
       metrics: [
@@ -112,7 +122,7 @@ export default function AIProjects() {
       subtitle: "Unlock the hidden insights in every sales conversation",
       description: "AI analyzes tone, sentiment, and key moments to deliver actionable coaching that transforms agent performance.",
       icon: FaMicrophone,
-      gradient: "from-blue-600 to-indigo-600",
+      gradient: "from-[#c11e38] to-[#220b34]",
       steps: [
         {
           icon: FaDatabase,
@@ -147,7 +157,7 @@ export default function AIProjects() {
       subtitle: "Eliminate manual reconciliation headaches",
       description: "Intelligent automation that connects your financial systems, detects anomalies, and provides predictive cash-flow insights.",
       icon: FaChartLine,
-      gradient: "from-green-600 to-teal-600",
+      gradient: "from-[#c11e38] to-[#220b34]",
       steps: [
         {
           number: "01",
@@ -182,7 +192,7 @@ export default function AIProjects() {
       subtitle: "AI-driven financial modeling for PE/VC firms",
       description: "Accelerate due diligence, enhance value creation, and make faster investment decisions.",
       icon: FaBriefcase,
-      gradient: "from-orange-600 to-red-600",
+      gradient: "from-[#c11e38] to-[#220b34]",
       features: [
         {
           number: "1",
@@ -213,7 +223,7 @@ export default function AIProjects() {
       subtitle: "Supercharge your sales pipeline",
       description: "Intelligent email campaigns that deliver 4× higher reply rates. AI crafts personalized messages, manages deliverability, and tracks engagement automatically.",
       icon: FaEnvelope,
-      gradient: "from-cyan-600 to-blue-600",
+      gradient: "from-[#c11e38] to-[#220b34]",
       features: [
         {
           number: "1",
@@ -248,7 +258,7 @@ export default function AIProjects() {
       subtitle: "Transform how your organization creates reports",
       description: "AI understands templates, auto-fills data from multiple sources, and ensures compliance—delivering 10× faster report cycles.",
       icon: FaFileAlt,
-      gradient: "from-[#c11e38] to-purple-600",
+      gradient: "from-[#c11e38] to-[#220b34]",
       features: [
         {
           icon: FaDatabase,
@@ -280,7 +290,7 @@ export default function AIProjects() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-[#c11e38]/5 via-[#220b34]/3 to-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 min-h-[78vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -387,9 +397,9 @@ export default function AIProjects() {
               <div className="p-6 sm:p-8 md:p-12">
                 {/* Features Grid */}
                 {product.features && (
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
+                  <div className={`grid sm:grid-cols-2 gap-6 mb-8 ${product.features.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'}`}>
                     {product.features.map((feature, idx) => (
-                      <div key={idx} className="bg-gradient-to-br from-[#220b34]/5 to-[#c11e38]/5 rounded-xl p-6 border border-[#220b34]/10">
+                      <div key={idx} className={`bg-gradient-to-br from-[#220b34]/5 to-[#c11e38]/5 rounded-xl p-6 border border-[#220b34]/10 ${product.features.length === 3 && idx === 2 ? 'lg:col-span-3' : ''}`}>
                         {feature.icon && <feature.icon className="text-3xl sm:text-4xl text-[#c11e38] mb-4" />}
                         {feature.number && <span className="text-3xl sm:text-4xl font-bold text-[#c11e38] mb-4 block">{feature.number}</span>}
                         <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">{feature.title}</h4>
@@ -405,7 +415,6 @@ export default function AIProjects() {
                     {product.steps.map((step, idx) => (
                       <div key={idx} className="bg-white border-2 border-[#220b34]/20 rounded-xl p-6 text-center hover:shadow-xl transition-all">
                         {step.icon && <step.icon className="text-4xl sm:text-5xl text-[#220b34] mx-auto mb-4" />}
-                        {step.number && <span className="text-4xl sm:text-5xl font-bold text-[#220b34] mb-4 block">{step.number}</span>}
                         <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">{step.title}</h4>
                         <p className="text-sm sm:text-base text-gray-700 break-words">{step.desc}</p>
                       </div>

@@ -94,7 +94,7 @@ const SUCCESS_STORIES = [
     school: "Riverdale School",
     location: "Multiple Locations",
     achievement: "Students publishing mini projects and winning local competitions",
-    students: "300+ students in STEAM programs",
+    students: "300+ students in STEM programs",
   },
   {
     id: 3,
@@ -217,7 +217,7 @@ export default function GlobalExposure() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 p-8 shadow-lg"
+              className="rounded-2xl bg-gradient-to-br from-[#c11e38]/5 to-[#220b34]/5 border border-[#c11e38]/20 p-8 shadow-lg"
             >
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <FaGlobe className="text-purple-600" />

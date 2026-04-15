@@ -71,8 +71,8 @@ export default function Blogs() {
     {
       id: 1,
       category: "stem-trends",
-      title: "NEP 2020 and the Future of STEAM Education in India",
-      excerpt: "How the National Education Policy 2020 is revolutionizing STEAM learning and what it means for schools and students.",
+      title: "NEP 2020 and the Future of STEM Education in India",
+      excerpt: "How the National Education Policy 2020 is revolutionizing STEM learning and what it means for schools and students.",
       author: "Dr. Javed Dodamani",
       date: "March 15, 2024",
       readTime: "8 min read",
@@ -167,8 +167,8 @@ export default function Blogs() {
     {
       id: 10,
       category: "guides",
-      title: "A Teacher's Guide to Implementing STEAM in the Classroom",
-      excerpt: "Practical strategies and lesson plans for educators looking to integrate STEAM concepts into their teaching.",
+      title: "A Teacher's Guide to Implementing STEM in the Classroom",
+      excerpt: "Practical strategies and lesson plans for educators looking to integrate STEM concepts into their teaching.",
       author: "Curriculum Team",
       date: "January 25, 2024",
       readTime: "11 min read",

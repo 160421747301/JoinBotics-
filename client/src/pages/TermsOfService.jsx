@@ -66,7 +66,7 @@ export default function TermsOfService() {
           >
             <h2 className="text-2xl font-bold mb-4">Our Services</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Join Botics provides STEAM education solutions including:
+              Join Botics provides STEM education solutions including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>Robotics, AI, and coding lab setup for educational institutions</li>

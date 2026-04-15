@@ -40,7 +40,7 @@ export default function FAQ() {
       id: 4,
       category: "general",
       question: "Is the curriculum aligned with school education standards?",
-      answer: "Absolutely!\n\n• Fully aligned with NEP 2020 (National Education Policy 2020)\n• Complies with CBSE ATL Guidelines\n• Supports STEAM education framework\n• Integrates seamlessly with Science, Math, and Computer Science subjects through hands-on learning\n\nOur curriculum enhances classroom learning with practical, real-world applications. We don't replace traditional education — we make it more engaging and relevant!"
+      answer: "Absolutely!\n\n• Fully aligned with NEP 2020 (National Education Policy 2020)\n• Complies with CBSE ATL Guidelines\n• Supports STEM education framework\n• Integrates seamlessly with Science, Math, and Computer Science subjects through hands-on learning\n\nOur curriculum enhances classroom learning with practical, real-world applications. We don't replace traditional education — we make it more engaging and relevant!"
     },
     // Programs
     {
@@ -65,14 +65,14 @@ export default function FAQ() {
       id: 8,
       category: "programs",
       question: "How does Join Botics partner with schools?",
-      answer: "Yes! We actively partner with schools and institutions for:\n\n• Robotics & Innovation Lab Setup: Complete infrastructure with tools, kits, and software\n• STEM Clubs & Activity Centers: After-school programs and competitions\n• Faculty Training Programs: Upskilling teachers in robotics, coding, and AI\n• Curriculum Integration: NEP 2020-aligned STEAM content\n• ATL (Atal Tinkering Lab) Support: Complete lab implementation and management\n• Robotics/AI/Coding Lab Setup: Turnkey solutions from design to deployment\n\nWe work with 50+ schools across Maharashtra, Karnataka, Gujarat, and beyond. Contact us for customized partnership models!"
+      answer: "Yes! We actively partner with schools and institutions for:\n\n• Robotics & Innovation Lab Setup: Complete infrastructure with tools, kits, and software\n• STEM Clubs & Activity Centers: After-school programs and competitions\n• Faculty Training Programs: Upskilling teachers in robotics, coding, and AI\n• Curriculum Integration: NEP 2020-aligned STEM content\n• ATL (Atal Tinkering Lab) Support: Complete lab implementation and management\n• Robotics/AI/Coding Lab Setup: Turnkey solutions from design to deployment\n\nWe work with 50+ schools across Maharashtra, Karnataka, Gujarat, and beyond. Contact us for customized partnership models!"
     },
     // Technical
     {
       id: 9,
       category: "technical",
       question: "What is the duration of each course?",
-      answer: "Duration varies by program type:\n\n• Workshops: 1-15 days (intensive, hands-on sessions)\n• Short-term Courses: 1-3 months (focused on specific skills)\n• Long-term School Programs: 6 months to 1 year (comprehensive STEAM education)\n• Internships (for college students): 2-6 months (project-based learning)\n• Custom Programs: Flexible duration based on requirements\n\nEach class is typically 60-90 minutes. We offer weekend and vacation batches as well!"
+      answer: "Duration varies by program type:\n\n• Workshops: 1-15 days (intensive, hands-on sessions)\n• Short-term Courses: 1-3 months (focused on specific skills)\n• Long-term School Programs: 6 months to 1 year (comprehensive STEM education)\n• Internships (for college students): 2-6 months (project-based learning)\n• Custom Programs: Flexible duration based on requirements\n\nEach class is typically 60-90 minutes. We offer weekend and vacation batches as well!"
     },
     {
       id: 10,
@@ -276,7 +276,7 @@ export default function FAQ() {
                 Contact Us
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919986780347"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white/30 transition-all"

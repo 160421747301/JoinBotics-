@@ -2,7 +2,7 @@ import { FaGraduationCap, FaCogs, FaUserTie, FaHandshake, FaCertificate, FaRobot
 
 const ITEMS = [
   {
-    key: "steam",
+    key: "stem",
     title: "Comprehensive STEM Curriculum",
     details: [
       "Aligned with CBSE, ICSE, IB & State Boards",

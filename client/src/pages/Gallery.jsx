@@ -361,7 +361,7 @@ export default function Gallery() {
             onClick={() => { setSelectedTab("gallery"); setSelectedCategory("all"); }}
             className={`flex items-center gap-2 px-8 py-3 rounded-xl font-semibold transition-all ${
               selectedTab === "gallery"
-                ? "bg-gradient-to-r from-[#c11e38] to-[#8a1532] text-white shadow-lg"
+                ? "bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white shadow-lg"
                 : "bg-white text-gray-700 hover:bg-gray-50 shadow"
             }`}
           >
@@ -374,7 +374,7 @@ export default function Gallery() {
             onClick={() => { setSelectedTab("videos"); setSelectedCategory("all"); }}
             className={`flex items-center gap-2 px-8 py-3 rounded-xl font-semibold transition-all ${
               selectedTab === "videos"
-                ? "bg-gradient-to-r from-[#c11e38] to-[#8a1532] text-white shadow-lg"
+                ? "bg-gradient-to-r from-[#c11e38] to-[#220b34] text-white shadow-lg"
                 : "bg-white text-gray-700 hover:bg-gray-50 shadow"
             }`}
           >
