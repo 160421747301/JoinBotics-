@@ -422,14 +422,6 @@ export default function Gallery() {
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <h3 className="text-white font-bold text-lg mb-2">{image.title}</h3>
-                  <p className="text-white/90 text-sm">{image.description}</p>
-                  <div className="mt-4 flex items-center gap-2 text-white">
-                    <FaExpand className="text-sm" />
-                    <span className="text-sm">Click to view</span>
-                  </div>
-                </div>
               </motion.div>
             ))}
           </div>
@@ -490,10 +482,6 @@ export default function Gallery() {
               alt={selectedImage.title}
               className="w-full h-auto rounded-lg shadow-2xl"
             />
-            <div className="mt-6 text-center">
-              <h3 className="text-white text-2xl font-bold mb-2">{selectedImage.title}</h3>
-              <p className="text-white/80">{selectedImage.description}</p>
-            </div>
           </motion.div>
         </motion.div>
       )}
